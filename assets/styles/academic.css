@@ -1,0 +1,73 @@
+.sec-academic ::selection{
+    background-color: var(--bg-fucsia-1);
+    color: var(--bg-white);
+}
+ 
+.fa__box__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.fa__content {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+
+.fa__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    gap: 2rem;
+}
+
+.fa__item {
+    list-style: none;
+    width: 20rem;
+}
+
+.fa__item__logo {
+    width: auto;
+    height: 10rem;
+    background-color: var(--bg-white);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
+}
+
+.fa__item__info {
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 1.5rem;
+}
+
+.fa__item__info h4 {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+/* ------------------------------------------
+                [RESPONSIVE]
+------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    .sec-academic {
+        padding: var(--pd-sec-menu);
+    }
+
+    .fa__item {
+        width: 90%;
+    }
+
+    .fa__item__logo {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,70 @@
+.sec-Skills ::selection{
+    background-color: var(--bg-purple-1);
+    color: var(--bg-white);
+}
+
+.sk__content ::selection{
+    background-color: var(--bg-purple-3);
+    color: var(--bg-white);
+}
+
+
+.sk__box__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.sk__content {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+
+.sk__icon--purple {
+    color: var(--bg-purple-2);
+}
+
+.sk__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sk__icon {
+    font-size: 3rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sk__text {
+    padding: .5rem 1rem;
+    background-color: var(--bg-purple-2);
+    color: var(--bg-white);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* ------------------------------------------
+                [RESPONSIVE]
+------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    .sec-Skills {
+        padding: var(--pd-sec-menu);
+    }
+
+    .sk__icon {
+        font-size: 3rem;
+    }
+
+    .sk__text {
+        padding: 0.7rem 1rem;
+    }
+    
+}

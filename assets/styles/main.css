@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html,
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+input,
+textarea {
+    font-family: 'Lato', sans-serif;
+}
+
+/* CONTENT */
+.ml-content {
+    width: 100%;
+}
+
+.ml-sec {
+    min-height: 100vh;
+}
+
+.sec__pd--sm {
+    padding: var(--pd-sec-sm);
+}
+
+.sec__pd {
+    padding: var(--pd-sec);
+}
+
+.content__titlle {
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+.content__line {
+    width: 7rem;
+    height: .15rem;
+    border-radius: .5rem;
+}
+
+/* SCROOLUP BUTTON */
+.ml-icon-scrollUp {
+    display: none;
+    border: 1px solid var(--bg-purple-1);
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--bg-white);
+    line-height: 2rem;
+    padding: .5rem;
+    transition: 1S;
+}
+
+.ml-icon-scrollUp a {
+    background: var(--bg-purple-1);
+    background: var(--bg-gradient-purple);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--bg-white);
+}
+
+/* FOOTER */
+.ml-footer {
+    text-align: center;
+    color: var(--bg-white);
+    padding: var(--pd-footer);
+    background-image: var(--bg-img-footer);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ml-footer p {
+    margin: 0;
+    font-size: .9rem;
+}
+
+/* LISTA */
+.hb__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0; 
+    gap: 15px;
+}
+
+.hb__list li {
+    list-style: none;
+    background-color: var(--bg-white);
+    width: 150px;
+    height: 150px;  
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
+}
+/* .hb__list li:first-child {
+    width: 9rem;
+    background-image: url('./../images/wallpaper/wall_hb.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hb__list li:last-child {
+    width: 9rem;
+    background-image: url('./../images/wallpaper/wall_hb.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ */
+
+.content__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    gap: 2rem;
+}
+
+.content__list li {
+    list-style: none;
+    background-color: var(--bg-white);
+    width: 9rem;
+    height: 9rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
+}
+
+/* ALIGN */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SELECT */
+.no-select {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* BACKGROUND */
+.bg-gray-3 {
+    background-color: var(--bg-gray-3);
+}
+
+/* LINE */
+.bg__line--lightblue {
+    background-color: var(--bg-lightblue-1);
+}
+
+.bg__line--lightblue {
+    background-color: var(--bg-lightblue-1);
+}
+
+.bg__line--fucsia {
+    background-color: var(--bg-fucsia-1);
+}
+
+.bg__line--purple {
+    background-color: var(--bg-purple-1);
+}
+
+/* SCROLL */
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: var(--shadow-scrollbar-track);
+    background-color: var(--bg-scrollbar);
+}
+
+body::-webkit-scrollbar {
+    width: .3em;
+    background-color: var(--bg-scrollbar);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background-color: var(--bg-purple-1);
+    background-image: var(--bg-scroll-thumb-image);
+}
+
+/* ------------------------------------------
+                [RESPONSIVE]
+------------------------------------------- */
+
+@media screen and (min-width: 1400px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    .content__list li {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .content__list li i {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .content__list li {
+        width: 90%;
+        height: 10rem;
+    }
+
+    .ml-footer {
+        background-position: 47.2% 0;
+        padding: 0.7rem 0;
+    }
+
+    .ml-footer p {
+        width: 100%;
+    }
+}
