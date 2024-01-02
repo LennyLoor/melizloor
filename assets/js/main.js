@@ -1,3 +1,5 @@
-AOS.init(); 
-import JSON from '../data/data.json' assert { type: "json" };
- 
+/* ELEMENTS */
+import './elements/carousel.js'
+import './elements/animateImage.js'
+/* COMPONENTS */
+import './components.js'

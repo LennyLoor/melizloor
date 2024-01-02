@@ -3,7 +3,7 @@
     top: 0;
     width: 100%;
     transition: 1s;
-    z-index: 3;
+    z-index: 2;
 }
 
 .header-content {

@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 html,
 body {
     margin: 0 auto;
     min-height: 100vh;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif; 
+    font-size: 1rem;
 }
 
 input,
@@ -12,7 +11,12 @@ textarea {
     font-family: 'Lato', sans-serif;
 }
 
-/* CONTENT */
+/* -----------------------------------------
+                [CONTENT]
+------------------------------------------- */
+/* section{
+    min-height: 100vh;
+} */
 .ml-content {
     width: 100%;
 }
@@ -29,12 +33,12 @@ textarea {
     padding: var(--pd-sec);
 }
 
-.content__titlle {
+.content_titlle {
     margin-bottom: .5rem;
     text-transform: uppercase;
 }
 
-.content__line {
+.content_line {
     width: 7rem;
     height: .15rem;
     border-radius: .5rem;
@@ -71,22 +75,6 @@ textarea {
     color: var(--bg-white);
 }
 
-/* FOOTER */
-.ml-footer {
-    text-align: center;
-    color: var(--bg-white);
-    padding: var(--pd-footer);
-    background-image: var(--bg-img-footer);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.ml-footer p {
-    margin: 0;
-    font-size: .9rem;
-}
-
 /* LISTA */
 .hb__list {
     display: flex;
@@ -110,20 +98,7 @@ textarea {
     box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
-}
-/* .hb__list li:first-child {
-    width: 9rem;
-    background-image: url('./../images/wallpaper/wall_hb.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.hb__list li:last-child {
-    width: 9rem;
-    background-image: url('./../images/wallpaper/wall_hb.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
- */
+} 
 
 .content__list {
     display: flex;
@@ -148,7 +123,27 @@ textarea {
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 6px 0px;
 }
+/* -----------------------------------------
+                [FOOTER]
+------------------------------------------- */ 
+.ml-footer {
+    text-align: center;
+    color: var(--bg-white);
+    padding: var(--pd-footer);
+    background-image: var(--bg-img-footer);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.ml-footer p {
+    margin: 0;
+    font-size: .9rem;
+}
+
+/* -----------------------------
+            UTILITIES 
+------------------------------*/
 /* ALIGN */
 .center {
     display: flex;
@@ -167,7 +162,19 @@ textarea {
 .bg-gray-3 {
     background-color: var(--bg-gray-3);
 }
+.bg-purple-2 {
+    background-color: var(--bg-purple-2);
+}
 
+.fill-purple svg{
+    fill: red;
+}
+
+/* TITLE */
+.title{
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
+}
 /* LINE */
 .bg__line--lightblue {
     background-color: var(--bg-lightblue-1);
@@ -207,9 +214,9 @@ body::-webkit-scrollbar-thumb {
 ------------------------------------------- */
 
 @media screen and (min-width: 1400px) {
-    body {
+   /*  body {
         font-size: 1.2rem;
-    }
+    } */
 
     .content__list li {
         width: 12rem;

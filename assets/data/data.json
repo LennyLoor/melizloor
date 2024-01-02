@@ -1,24 +1,284 @@
 {
-    "hobbies": [
-      {
-        "id": "1",
-        "name": "Diseño Web"
-      },
-      {
-        "id": "2",
-        "name": "Tecnología" 
-      },
-      {
-        "id": "3",
-        "name": "Gastronomía"
-      },
-      {
-        "id": "4",
-        "name": "Gastronomía"
-      },
-      {
-        "id": "5",
-        "name": "Gastronomía"
-      }
-    ] 
-  }
+    "home_wallpaper":[
+        {
+            "image": "glasses"
+        },
+        {
+            "image": "cup"
+        },
+        {
+            "image": "usb"
+        },
+        {
+            "image": "headphones"
+        },
+        {
+            "image": "mouse"
+        }
+    ],
+    "social_media":[
+        {
+            "class": "Github",
+            "url": "https://github.com/LennyLoor", 
+            "name":"Github"
+        },
+        {
+            "class": "Linkedin",
+            "url": "https://www.linkedin.com/in/lennyloor/", 
+            "name":"Linkedin"
+        },
+        {
+            "class": "Behance",
+            "url": "https://www.behance.net/LennyLoor", 
+            "name":"Behance"
+        },
+        {
+            "class": "cv",
+            "url": "assets/documentos/CV-LENNY-LOOR.pdf", 
+            "name":"Currículum"
+        } 
+    ],
+    "hobbies":[
+        {
+            "icon": "headphones",
+            "name":"Escuchar música"
+        },
+        {
+            "icon": "tv",
+            "name":"ver series"
+        },
+        {
+            "icon": "car",
+            "name":"Viajar"
+        },
+        {
+            "icon": "camera",
+            "name":"Fotografía"
+        },
+        {
+            "icon": "paintbrush",
+            "name":"Pintar"
+        }
+    ],
+    "skills":[
+        {
+            "nameImage": "html",
+            "name":"Html 5"
+        },
+        {
+            "nameImage": "css",
+            "name":"CSS"
+        },
+        {
+            "nameImage": "sass",
+            "name":"SASS"
+        },
+        {
+            "nameImage": "js",
+            "name":"Javascript"
+        },
+        {
+            "nameImage": "json",
+            "name":"Json"
+        },
+        {
+            "nameImage": "nodejs",
+            "name":"Node JS"
+        },
+        {
+            "nameImage": "react",
+            "name":"React"
+        },
+        {
+            "nameImage": "angular",
+            "name":"Angular"
+        },
+        {
+            "nameImage": "github",
+            "name":"GitHub"
+        },
+        {
+            "nameImage": "adobe_psd", 
+            "name":"Adobe Photoshop"
+        },
+        {
+            "nameImage": "adobe_ai",  
+            "name":"Adobe Illustrator"
+        },
+        {
+            "nameImage": "adobe_ae",  
+            "name":"Adobe After Effects"
+        },
+        {
+            "nameImage": "adobe_pr",  
+            "name":"Adobe Premiere Pro"
+        },
+        {
+            "nameImage": "cinema_4D",   
+            "name":"Cinema 4D"
+        }
+    ],
+    "academics": [
+        {
+            "id": "linkedIn",
+            "name": "LinkedIn Learning",
+            "descripcion": "Cursos - Online",
+            "labelBtn1": "Plataforma",
+            "urlBtn1": "https://learning.linkedin.com/",
+            "labelBtn2": "Certificados",
+            "urlBtn2": "https://www.linkedin.com/in/lennyloor/details/certifications/",
+            "visibility_btn1": "block",
+            "visibility_btn2": "block",
+            "info": "<b>Formaciones</b><br><ul class='list-detalles'><li> Adobe XD </li>  <li>Fundamentos de Project Management </li> <li> Figma </li>"
+        },
+        {
+            "id": "platzi",
+            "name": "Platzi",
+            "descripcion": "Cursos - Online",
+            "labelBtn1": "Plataforma",
+            "urlBtn1": "https://platzi.com/",
+            "labelBtn2": "Certificados",
+            "urlBtn2": "https://www.linkedin.com/in/lennyloor/details/certifications/",
+            "visibility_btn1": "block",
+            "visibility_btn2": "block",
+            "info": "<b>Formaciones</b><br><ul class='list-detalles'><li> Adobe XD </li>  <li>Fundamentos de Project Management </li> <li> Figma </li>"
+        },
+        {
+            "id": "cen",
+            "name": "Centro Ecuatoriano Norteamericano",
+            "descripcion": "Jun. 2023 - Actualmente",
+            "labelBtn1": "Institución", 
+            "urlBtn1": "https://www.cenecuador.edu.ec/",
+            "labelBtn2": "",
+            "urlBtn2": "",
+            "visibility_btn1": "block",
+            "visibility_btn2": "none",
+            "info": "<b>Programa</b><br>Programa de Ingles"
+        },
+        {
+            "id": "alura",
+            "name": "Alura | Oracle Next Education",
+            "descripcion": "Mar. 2023 - Sep. 2023",
+            "labelBtn1": "Plataforma",
+            "urlBtn1": "https://www.aluracursos.com/",
+            "labelBtn2": "Certificado",
+            "urlBtn2": "https://app.aluracursos.com/user/lenny-loor/program/certificate",
+            "visibility_btn1": "block",
+            "visibility_btn2": "block",
+            "info": "<b>Programa</b><br>Oracle Next Education F2 T5 Front-end <br><b>Formaciones</b> <ul class='list-detalles'> <li>Principiante en Programación</li> <li>Desarrollo Personal</li> <li>Business Agility</li> <li>Front End</li> <li>Emprendimiento</li> <li>React</li> </ul>"
+        },
+        {
+            "id": "espol",
+            "name": "Escuela Superior Politécnica del Litoral",
+            "descripcion": "May. 2012 - Mar. 2018",
+            "labelBtn1": "Institución",
+            "urlBtn1": "https://www.espol.edu.ec/es",
+            "labelBtn2": "Certificado",
+            "urlBtn2": "https://www.senescyt.gob.ec/consulta-titulos-web/faces/vista/consulta/consulta.xhtml",
+            "visibility_btn1": "block",
+            "visibility_btn2": "block",
+            "info": "<b>Título Obtenido</b><br>Lcda. Diseño y producción Audiovisual<br><b>Senesyt</b><br>Graduado con número de registro:<BR> 1021-2018-1961447"
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "data_categoria": "Diseño Web", 
+            "image": "Juego-El-Ahorcado.png",
+            "name_image": "Juego El ahorcado",
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "name_project": "Juego El ahorcado",
+            "tipo_project": "Challenge Oracle",
+            "url_repositorio": "https://github.com/LennyLoor/Juego-El-Ahorcado.git",
+            "url_demo": "https://lennyloor.github.io/Juego-El-Ahorcado/"
+        }, 
+        {
+            "id": "1",
+            "data_categoria": "Diseño Web", 
+            "image": "Encriptador-de-texto.png",
+            "name_image": "Encriptador de texto",
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "name_project": "Encriptador de texto",
+            "tipo_project": "Challenge Oracle",
+            "url_repositorio": "https://github.com/LennyLoor/Challenge-Oracle-One",
+            "url_demo": "https://lennyloor.github.io/Challenge-Oracle-One/"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Diseño Web", 
+            "image": "Alura-Geek.png",
+            "name_image": "AluraGeek",
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "name_project": "AluraGeek",
+            "tipo_project": "Challenge Oracle",
+            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
+            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Aplicaciones mobiles", 
+            "image": "app_egobx.png",
+            "name_image": "app_egobx",
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "name_project": "App eGobX",
+            "tipo_project": "Bitekso | App municipal",
+            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
+            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Diseño Web", 
+            "image": "ventanilla_virtual.png",
+            "name_image": "ventanilla_virtual",
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "name_project": "Plataforma municipal",
+            "tipo_project": "Bitekso | Municipio de Guayaquil",
+            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
+            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Branding", 
+            "image": "brainwit.png",
+            "name_image": "Brainwit",
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "name_project": "Brainwit",
+            "tipo_project": "Diseño de Marca",
+            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
+            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+        }, 
+        {
+            "id": "1",
+            "data_categoria": "Branding", 
+            "image": "marqueteria_colon.png",
+            "name_image": "Marqueteria Colón",
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "name_project": "Marqueteria Colón",
+            "tipo_project": "Diseño de Marca",
+            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
+            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+        }, 
+        {
+            "id": "1",
+            "data_categoria": "Contenido | Redes sociales", 
+            "image": "cañuela.png",
+            "name_image": "Cañuela",
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "name_project": "Cañuela",
+            "tipo_project": "Instagram post",
+            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
+            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Contenido | Redes sociales", 
+            "image": "smach.png",
+            "name_image": "Smach",
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "name_project": "Smach",
+            "tipo_project": "Instagram post",
+            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
+            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+        } 
+    ]
+}

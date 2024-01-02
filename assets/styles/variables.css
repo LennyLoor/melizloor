@@ -1,10 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 :root {
 
-    --bg-img-contact: url('../images/wallpaper/wallpaper_contacto.jpg');
-    --bg-img-home: url('../images/wallpaper/wallpaper_home.png');
-    --bg-img-sobre-mi: url('../images/wallpaper/wallpaper_sm.png');
-    --bg-img-sobre-mi-movil: url('../images/wallpaper/wallpaper_sm_movil.png');
+    --bg-img-contact: url('../../images/wallpaper/wallpaper_contacto.jpg');
+    --bg-img-home: url('../../images/wallpaper/wallpaper_home.png');
+    --bg-img-about-me: url('../../images/wallpaper/wallpaper_sm.png');
+    --bg-img-about-me-movil: url('../../images/wallpaper/wallpaper_sm_movil.png');
+    --bg-img-academic: url('../../images/wallpaper/wallpaper_academic.png');
     --bg-img-footer: url('../images/wallpaper/wallpaper_footer.png');
+
+    --bg-img-glasses: url('../../images/wallpaper/glasses.png');
+    --bg-img-cup: url('../../images/wallpaper/cup.png');
+    --bg-img-usb: url('../../images/wallpaper/usb.png');
+    --bg-img-headphones: url('../../images/wallpaper/headphones.png');
+    --bg-img-mouse: url('../../images/wallpaper/mouse.png');
+
+    --bg-logo-ESPOL: url('../../images/Logos/ESPOL.png');
+    --bg-logo-AluraOracle: url('../../images/Logos/AluraOracle.png');
+    --bg-logo-CEN: url('../../images/Logos/CEN.png');
+    --bg-logo-linkedIn-learning: url('../../images/Logos/linkedIn-learning.png');
+    --bg-logo-platzi: url('../../images/Logos/platzi.png');
 
     --width-content: 90%;
 
