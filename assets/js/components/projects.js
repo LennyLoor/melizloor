@@ -7,12 +7,12 @@ class listProjects extends HTMLElement {
         this.project = data.projects;
     }
     connectedCallback() {
-        this.innerHTML = this.project.map((data_) => {
+        this.innerHTML = this.project.map((data_) => { 
             return ` 
             <div class="item" 
                 data-categoria="${data_.data_categoria}" >
                 <div class="item-content">
-                    <img class="item-image" width="200" src="../assets/images/projects/${data_.image}" alt="${data_.name_image}" title="${data_.name_image}">
+                    <img class="item-image" width="200" src="../assets/images/projects/${data_.image}" alt="${data_.name_project}" title="${data_.name_project}">
                     <div class="item-data"> 
                         <div class="items title">
                             <p>${data_.name_project}</p>
@@ -25,10 +25,10 @@ class listProjects extends HTMLElement {
                                ${data_.herramientas}
                             </div>
                         </div>
-                        <div class="items buttons">
-                            <a href="${data_.url_repositorio}" target="_blank" class="btn-Outlined">Repositorio</a>
-                            <a href="${data_.url_demo}" target="_blank" class="btn-default">Ver demo</a>
-                            <a target="_blank" class="expand-image btn-Outlined">Imagen <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                        <div class="items buttons"> 
+                            <a href="${data_.url_repositorio}" style="display:${data_.btn_repositorio}" target="_blank">Repositorio</a>
+                            <a href="${data_.url_enlace}" style="display:${data_.btn_enlace}" target="_blank">${data_.tipoDeEnlace}</a> 
+                            <a target="_blank" class="expand-image" style="display:${data_.btn_imagen}">Imagen <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
                         </div>
                     </div>
                 </div>

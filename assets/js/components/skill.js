@@ -10,8 +10,8 @@ class listSkill extends HTMLElement {
         this.innerHTML = this.skill.map((data_) =>{
             return `<li>
                         <div class="sk__item">
-                            <div class="sk__icon">  
-                                <object class="no-select fill-purple" width="60" data="assets/images/Icon/Icon_${data_.nameImage}.svg"></object>
+                            <div class="sk__icon">   
+                                <img class="no-select fill-purple" width="60" src="assets/images/Icon/Icon_${data_.nameImage}.svg">
                             </div>
                             <div class="sk__text">
                                 <span>${data_.name}</span>

@@ -98,6 +98,14 @@
             "name":"GitHub"
         },
         {
+            "nameImage": "figma", 
+            "name":"Figma"
+        },
+        {
+            "nameImage": "adobe_xd", 
+            "name":"Adobe XD"
+        },
+        {
             "nameImage": "adobe_psd", 
             "name":"Adobe Photoshop"
         },
@@ -112,6 +120,10 @@
         {
             "nameImage": "adobe_pr",  
             "name":"Adobe Premiere Pro"
+        },
+        {
+            "nameImage": "proTools",  
+            "name":"Pro Tools"
         },
         {
             "nameImage": "cinema_4D",   
@@ -181,104 +193,299 @@
         }
     ],
     "projects": [
-        {
-            "id": "1",
+        { 
             "data_categoria": "Diseño Web", 
-            "image": "Juego-El-Ahorcado.png",
-            "name_image": "Juego El ahorcado",
-            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "image": "Juego-El-Ahorcado.png", 
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='js' src='assets/images/Icon/Icon_js.svg'>",
             "name_project": "Juego El ahorcado",
             "tipo_project": "Challenge Oracle",
+            "btn_repositorio": "block",
             "url_repositorio": "https://github.com/LennyLoor/Juego-El-Ahorcado.git",
-            "url_demo": "https://lennyloor.github.io/Juego-El-Ahorcado/"
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Demo",
+            "url_enlace": "https://lennyloor.github.io/Juego-El-Ahorcado/",
+            "btn_imagen": "block"
         }, 
-        {
-            "id": "1",
+        { 
             "data_categoria": "Diseño Web", 
-            "image": "Encriptador-de-texto.png",
-            "name_image": "Encriptador de texto",
-            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "image": "Encriptador-de-texto.png", 
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='js' src='assets/images/Icon/Icon_js.svg'>",
             "name_project": "Encriptador de texto",
             "tipo_project": "Challenge Oracle",
+            "btn_repositorio": "block",
             "url_repositorio": "https://github.com/LennyLoor/Challenge-Oracle-One",
-            "url_demo": "https://lennyloor.github.io/Challenge-Oracle-One/"
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Demo",
+            "url_enlace": "https://lennyloor.github.io/Challenge-Oracle-One/",
+            "btn_imagen": "block"
         },
-        {
-            "id": "1",
+        { 
             "data_categoria": "Diseño Web", 
-            "image": "Alura-Geek.png",
-            "name_image": "AluraGeek",
-            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "image": "Alura-Geek.png", 
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='js' src='assets/images/Icon/Icon_js.svg'><img class='no-select' title='json' src='assets/images/Icon/Icon_json.svg'><img class='no-select' title='React' src='assets/images/Icon/Icon_react.svg'>",
             "name_project": "AluraGeek",
             "tipo_project": "Challenge Oracle",
+            "btn_repositorio": "block",
             "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
-            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Demo",
+            "url_enlace": "https://lennyloor.github.io/Alura-Geek/",
+            "btn_imagen": "block"
         },
         {
             "id": "1",
             "data_categoria": "Aplicaciones mobiles", 
-            "image": "app_egobx.png",
-            "name_image": "app_egobx",
-            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "image": "app_egobx.png", 
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Figma' src='assets/images/Icon/Icon_figma.svg'>",
             "name_project": "App eGobX",
             "tipo_project": "Bitekso | App municipal",
-            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
-            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "none",
+            "tipoDeEnlace": "",
+            "url_enlace": "",
+            "btn_imagen": "block"
         },
         {
             "id": "1",
             "data_categoria": "Diseño Web", 
-            "image": "ventanilla_virtual.png",
-            "name_image": "ventanilla_virtual",
-            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "image": "ventanilla_virtual.png", 
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'>",
             "name_project": "Plataforma municipal",
             "tipo_project": "Bitekso | Municipio de Guayaquil",
-            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
-            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Sitio web",
+            "url_enlace": "https://sgtm.guayaquil.gob.ec/ConsultasWeb",
+            "btn_imagen": "block"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Diseño Web", 
+            "image": "Portal_servicios.png", 
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='SASS' src='assets/images/Icon/Icon_sass.svg'><img class='no-select' title='Angular' src='assets/images/Icon/Icon_angular.svg'>",
+            "name_project": "Portal Servicios MTOP",
+            "tipo_project": "Bitekso | Propuesta de diseño",
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "none",
+            "tipoDeEnlace": "",
+            "url_enlace": "",
+            "btn_imagen": "block"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Diseño Web", 
+            "image": "plataformas_municipales.png", 
+            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='SASS' src='assets/images/Icon/Icon_sass.svg'><img class='no-select' title='Angular' src='assets/images/Icon/Icon_angular.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='React' src='assets/images/Icon/Icon_react.svg'>",
+            "name_project": "Sistemas Municipales",
+            "tipo_project": "Bitekso | Proyectos Municipales ",
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "none",
+            "tipoDeEnlace": "",
+            "url_enlace": "",
+            "btn_imagen": "block"
         },
         {
             "id": "1",
             "data_categoria": "Branding", 
-            "image": "brainwit.png",
-            "name_image": "Brainwit",
-            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "image": "brainwit.png", 
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Photoshop' src='assets/images/Icon/Icon_adobe_psd.svg'>",
             "name_project": "Brainwit",
             "tipo_project": "Diseño de Marca",
-            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
-            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "none",
+            "tipoDeEnlace": "",
+            "url_enlace": "",
+            "btn_imagen": "block"
         }, 
         {
             "id": "1",
             "data_categoria": "Branding", 
             "image": "marqueteria_colon.png",
-            "name_image": "Marqueteria Colón",
-            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Photoshop' src='assets/images/Icon/Icon_adobe_psd.svg'>",
             "name_project": "Marqueteria Colón",
             "tipo_project": "Diseño de Marca",
-            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
-            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "none",
+            "tipoDeEnlace": "",
+            "url_enlace": "",
+            "btn_imagen": "block"
         }, 
+        {
+            "id": "1",
+            "data_categoria": "Branding", 
+            "image": "bitekso.png",
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Photoshop' src='assets/images/Icon/Icon_adobe_psd.svg'>",
+            "name_project": "Bitekso S.A.",
+            "tipo_project": "Diseño de Marca",
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "none",
+            "tipoDeEnlace": "",
+            "url_enlace": "",
+            "btn_imagen": "block"
+        }, 
+        {
+            "id": "1",
+            "data_categoria": "Contenido | Redes sociales", 
+            "image": "la_padelera.png", 
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Photoshop' src='assets/images/Icon/Icon_adobe_psd.svg'>",
+            "name_project": "La Padelera",
+            "tipo_project": "Instagram post",
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Instagram",
+            "url_enlace": "https://www.instagram.com/lapadelera.ec/?hl=es-la",
+            "btn_imagen": "block"
+        },
         {
             "id": "1",
             "data_categoria": "Contenido | Redes sociales", 
             "image": "cañuela.png",
             "name_image": "Cañuela",
-            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Photoshop' src='assets/images/Icon/Icon_adobe_psd.svg'>",
             "name_project": "Cañuela",
             "tipo_project": "Instagram post",
-            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
-            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Instagram",
+            "url_enlace": "https://www.instagram.com/canuelaec/?hl=es",
+            "btn_imagen": "block"
         },
         {
             "id": "1",
             "data_categoria": "Contenido | Redes sociales", 
             "image": "smach.png",
             "name_image": "Smach",
-            "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='Javascript' src='assets/images/Icon/Icon_js.svg'> <img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Photoshop' src='assets/images/Icon/Icon_adobe_psd.svg'>",
             "name_project": "Smach",
             "tipo_project": "Instagram post",
-            "url_repositorio": "https://github.com/LennyLoor/Alura-Geek",
-            "url_demo": "https://lennyloor.github.io/Alura-Geek/"
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Instagram",
+            "url_enlace": "https://www.instagram.com/smash_latam/",
+            "btn_imagen": "block"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Contenido | Redes sociales", 
+            "image": "multiprosec.png",
+            "name_image": "Multiprosec S.A.S",
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'>",
+            "name_project": "Multiprosec S.A.S",
+            "tipo_project": "WhatsApp post",
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "none",
+            "tipoDeEnlace": "",
+            "url_enlace": "",
+            "btn_imagen": "block"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Animaciones 2D - 3D", 
+            "image": "video_3d_bitekso.png", 
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Photoshop' src='assets/images/Icon/Icon_adobe_psd.svg'><img class='no-select' title='Adobe Cinema 4d' src='assets/images/Icon/Icon_cinema_4D.svg'><img class='no-select' title='Adobe Adobe After Effects' src='assets/images/Icon/Icon_adobe_pr.svg'>",
+            "name_project": "Vídeo de presentación",
+            "tipo_project": "Sitio web Bitekso S.A.",
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Ver video",
+            "url_enlace": "https://www.behance.net/gallery/187981589/Video-de-presentacion?",
+            "btn_imagen": "none"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Animaciones 2D - 3D", 
+            "image": "video_2d_Unidos_por_el_vicio.png", 
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Adobe After Effects' src='assets/images/Icon/Icon_adobe_ae.svg'>",
+            "name_project": "Unidos por el vicio",
+            "tipo_project": "Portada Fanpage",
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Ver video",
+            "url_enlace": "https://www.behance.net/gallery/106331109/Portada-Fanpage-Unidos-por-el-vicio",
+            "btn_imagen": "none"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Animaciones 2D - 3D", 
+            "image": "colilla_zona_trendy.png", 
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Adobe After Effects' src='assets/images/Icon/Icon_adobe_ae.svg'>",
+            "name_project": "Zona Trendy",
+            "tipo_project": "Proyecto Universitario",
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Ver video",
+            "url_enlace": "https://www.youtube.com/watch?v=9SJ_181VZeY",
+            "btn_imagen": "none"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Animaciones 2D - 3D", 
+            "image": "video_informativo.png",
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Adobe After Effects' src='assets/images/Icon/Icon_adobe_ae.svg'>",
+            "name_project": "Video Informativo",
+            "tipo_project": "ESPOL | Bienestar Estudiantil",
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Ver video",
+            "url_enlace": "https://www.youtube.com/watch?v=UKqg0BReqC4",
+            "btn_imagen": "none"
+        },
+        {
+            "id": "1",
+            "data_categoria": "Cortometrajes", 
+            "image": "Cortometraje_Rumores.png",
+            "name_image": "Campaña contra la violencia en el noviazgo",
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Adobe After Effects' src='assets/images/Icon/Icon_adobe_pr.svg'><img class='no-select' title='Adobe Adobe Premiere Pro' src='assets/images/Icon/Icon_adobe_ae.svg'><img class='no-select' title='Pro Tools' src='assets/images/Icon/Icon_proTools.svg'>",
+            "name_project": "Rumores",
+            "tipo_project": "Cortometraje",
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "block",
+            "tipoDeEnlace": "Ver video",
+            "url_enlace": "https://www.youtube.com/watch?v=ppB0AOHq0mo&t=74s",
+            "btn_imagen": "none"
         } 
+    ],
+    "redes_sociales":[
+        {
+            "icono":"linkedin-in",
+            "usuario":"@lennyloor",
+            "enlace":"https://www.linkedin.com/in/lennyloor/"
+        },
+        {
+            "icono":"behance",
+            "usuario":"@LennyLoor",
+            "enlace":"https://www.behance.net/LennyLoor"
+        },
+        {
+            "icono":"whatsapp",
+            "usuario":"+593 9216 2233",
+            "enlace":"https://wa.link/3m5stm"
+        },
+        {
+            "icono":"youtube",
+            "usuario":"@melizloor",
+            "enlace":"https://www.youtube.com/@melizloor"
+        },
+        {
+            "icono":"github",
+            "usuario":"@LennyLoor",
+            "enlace":"https://github.com/LennyLoor"
+        }
     ]
 }

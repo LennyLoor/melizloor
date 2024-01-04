@@ -1,5 +1,5 @@
 /* Inicializar Muuri */
-const list = new Muuri('.list', {
+const list = new Muuri('.list', {  
 	layout: {
 		rounding: false
 	}
@@ -7,19 +7,28 @@ const list = new Muuri('.list', {
 
 /* Transición Imágenes*/
 window.addEventListener('load', () => {
+	
 	list.refreshItems().layout();
-	document.getElementById('list').classList.add('loaded-images');
+	//document.getElementById('list').classList.add('loaded-images'); 
+	document.getElementById('list').classList.add('loaded-images'); 
+	
+ 
 
 	/* Filtrar por Categoría */
 	const enlaces = document.querySelectorAll('#categories a');
-	enlaces.forEach( (elemento) => {
+	
+	enlaces.forEach( (elemento) => { 
+		/* Cargar categoria activa */ 
+		if(elemento.classList == 'active'){
+			const categoria = elemento.innerHTML;    
+			categoria === 'todas' ? list.filter('[data-categoria]') : list.filter(`[data-categoria="${categoria}"]`);
+		}
+		/* Evento click categoria */ 
 		elemento.addEventListener('click', (evento) => {
 			evento.preventDefault();
 			enlaces.forEach((enlace) => enlace.classList.remove('active'));
-			event.target.classList.add('active');
-
-			/* Identificar la categoria del enlace que fué cliqueado */ 
-			const categoria = evento.target.innerHTML;   
+			evento.target.classList.add('active'); 
+			const categoria = evento.target.innerHTML;    
 			categoria === 'todas' ? list.filter('[data-categoria]') : list.filter(`[data-categoria="${categoria}"]`);
 		});
 	} ); 

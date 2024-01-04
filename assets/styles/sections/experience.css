@@ -138,8 +138,8 @@
     display: block;
     width: 0;
     border: none;
-    border-bottom: solid 2px #FEF5DF;  
-    transition: all 0.5s; 
+    border-bottom: solid 2px #FEF5DF;
+    transition: all 0.5s;
 }
 
 .ep_box .content {
@@ -154,10 +154,10 @@
 }
 
 .ep_box .content p {
-    margin-top: 0.4rem; 
+    margin-top: 0.4rem;
 }
 
-.ep_box .content span { 
+.ep_box .content span {
     opacity: .5;
 }
 
@@ -196,16 +196,23 @@
     cursor: pointer;
 }
 
-.ep_box .buttons .btn-default {
+.ep_box .buttons a {
+    font-weight: 500;
+    padding: .3rem .5rem;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: .3rem;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+}
+
+.ep_box .buttons a:hover {
     background: white;
     color: var(--bg-dark-1);
 }
 
-.ep_box .buttons .btn-Outlined {
-    border: 1px solid white;
-    color: white;
-}
-.ep_box .buttons .expand-image i{
+.ep_box .buttons .expand-image i {
     margin-left: .2rem;
 }
 
@@ -265,48 +272,32 @@
     right: 35px;
     top: 35px;
 }
- 
+
 
 /* ------------------------------------------
                 [RESPONSIVE]
 ------------------------------------------- */
 @media screen and (min-width: 1400px) {
-
-    /*  .content_list {
-        width: 90%;
-        gap: 3rem;
-    } */
+ 
 
 }
 
-@media only screen and (max-width: 768px) {
-
-    .sec-experiencia {
-        padding: var(--pd-sec-menu);
-    }
-
-    .ep__item {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .ep__item__image {
+@media only screen and (max-width: 768px) { 
+    .ep_box .content_list .list .item{
         width: 100%;
-        order: 1;
+    } 
+    .ep_box .content_list .list .item{
+        margin: 0; 
+        padding-bottom: 1rem;
     }
-
-    .ep__item__image img {
-        border-radius: 0.5rem;
+    .ep_box .title p{
+        font-size: .8rem;
     }
-
-    .ep__item__info {
-        width: 100%;
-        order: 2;
-        padding: 0;
+    .ep_box .item-data .content{
+        font-size: .7rem;
+        line-height: .2rem;
     }
-
-    /* .info__box {
-        align-items: center;
-    } */
-
+    .ep_box .item-data .buttons{
+        font-size: .7rem; 
+    }
 }

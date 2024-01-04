@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +9,24 @@
     <!-- Style -->
     <link rel="stylesheet" href="assets/styles/variables.css">
     <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/header.css">
-    <link rel="stylesheet" href="assets/styles/animate.css">
+    <link rel="stylesheet" href="assets/styles/header.css"> 
     <!-- Style / Sections -->
     <link rel="stylesheet" href="assets/styles/sections/home.css">
     <link rel="stylesheet" href="assets/styles/sections/about-me.css">
-    <link rel="stylesheet" href="assets/styles/sections/hobbies.css">
     <link rel="stylesheet" href="assets/styles/sections/skills.css">
     <link rel="stylesheet" href="assets/styles/sections/academic.css">
     <link rel="stylesheet" href="assets/styles/sections/experience.css">
+    <link rel="stylesheet" href="assets/styles/sections/trabajemos-juntos.css">
     <link rel="stylesheet" href="assets/styles/sections/contact.css">
     <!-- Script -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/b229e29af4.js" crossorigin="anonymous"></script>
-    <!-- OwlCarousel2 -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.carousel.min.css'>
-    <link rel='stylesheet'
-        href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.theme.default.min.css'>
 
+    <!--  -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script> 
+    <!-- Stellar -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 </head>
 
 <body>
@@ -47,7 +46,6 @@
                 <nav class="header__menu">
                     <ul class="menu__list">
                         <li class="menu__list__item"><a href="#about-me">Sobre mi</a></li>
-                        <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
                         <li class="menu__list__item"><a href="#skills">Skills</a></li>
                         <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                         <li class="menu__list__item"><a href="#proyectos">Proyectos</a></li>
@@ -72,7 +70,7 @@
                             atractivas.
                         </p>
                         <ul class="no-select">
-                           <list-socialmedia class="info__network"></list-socialmedia>
+                            <list-socialmedia class="info__network"></list-socialmedia>
                         </ul>
                     </div>
 
@@ -85,10 +83,10 @@
             <section id="about-me" class="ml-sec sec-about-me wall-sm paused">
 
                 <div class="sm__images">
-                    <wallpaper-elements></wallpaper-elements> 
+                    <wallpaper-elements></wallpaper-elements>
                 </div>
 
-                <div class="sm__box sec__pd--sm center">
+                <div class="sm_box sec__pd--sm center">
                     <div class="sm__box__content ">
                         <h3 class="content_titlle">Sobre mi</h3>
                         <div class="content_line bg__line--fucsia"></div>
@@ -107,43 +105,34 @@
                                 habilidades creativas para diseñar experiencias impactantes y efectivas que deleiten
                                 a los usuarios.
                             </p>
+                            <div class="hb_box">
+                                <div class="hb_box__header">Hobbies</div>
+                                <ul class="hb_box__list">
+                                    <list-hobbies class="hb__list"></list-hobbies>
+                                </ul>
+                            </div>
                             <img class="no-select" width="100" src="assets/images/firma.png">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="hobbies" class="sec-Hobbies">
-                <div class="hb_box sec__pd">
-                    <div class="hb_box__content">
-                        <h3 class="content_titlle">Hobbies</h3>
-                        <div class="content_line bg__line--lightblue"></div>
-                        <div class="hb_content">
-                            <ul>
-                                <list-hobbies class="hb__list"></list-hobbies> 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills" class="sec-Skills bg-gray-3">
+            <section id="skills" class="sec-Skills bg-Skills">
                 <div class="sk_box sec__pd">
                     <div class="sk_box__content">
-                        <h3 class="content_titlle">Skills</h3>
-                        <span class="content_line bg__line--purple"></span>                       
                         <ul class="content_list">
-                            <list-skill class="owl-carousel sk_slider"></list-skill>                             
+                            <list-skill class="sk_slider"></list-skill>
+                            <list-skill class="sk_slider"></list-skill>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section id="formacion" class="sec-academic wall-academic">
+            <section id="formacion" class="sec-academic bg-gray-3">
                 <div class="fa_box sec__pd">
                     <div class="fa_box__content">
                         <h3 class="content_titlle">Formación académica</h3>
-                        <div class="content_line bg__line--fucsia"></div>
+                        <div class="content_line bg__line--purple"></div>
                         <div class="fa_content">
                             <ul class="fa_list">
                                 <list-academic></list-academic>
@@ -152,58 +141,82 @@
                     </div>
                 </div>
             </section>
-            
+
             <section id="proyectos" class="sec-experiencia">
                 <div class="ep_box sec__pd">
                     <div class="ep_box__content">
                         <h3 class="content_titlle">Experiencia profesional</h3>
                         <div class="content_line bg__line--lightblue"></div>
-                        <div class="content_list">  
-                            <div class="categories" id="categories"> 
+                        <div class="content_list">
+                            <div class="categories" id="categories">
                                 <a href="#" class="active">Branding</a>
                                 <a href="#">Contenido | Redes sociales</a>
                                 <a href="#">Diseño Web</a>
                                 <a href="#">Aplicaciones mobiles</a>
-                                <a href="#">Animaciones 2D - 3D</a> 
-                            </div> 
+                                <a href="#">Animaciones 2D - 3D</a>
+                                <a href="#">Cortometrajes</a>
+                            </div>
                             <list-projects class="list" id="list"></list-projects>
-                            <overlay-images class="overlay" id="overlay"></overlay-images> 
+                            <overlay-images class="overlay" id="overlay"></overlay-images>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="contacto">
-                <div class="ep__box sec__pd">
-                    <div class="ep__box__content">
+            <section id="contacto" class="sec-tj img__tj" data-stellar-background-ratio="0.5">
+                <div class="overlay-gray"></div>
+                <div class="tj_box sec__pd">
+                    <div class="tj_box__content">
                         <h3 class="content_titlle">Trabajemos juntos</h3>
                         <div class="content_line bg__line--lightblue"></div>
-                        <div class="ep__content">
+                        <div class="tj_content">
                             <p>
-                                ¿Te gustaría que colaboremos? Solo debes hacer click en el siguiente enlace y completar
-                                el formulario con los detalles de tu proyecto:
+                                ¿Te gustaría que colaboremos? <br>
+                                Solo debes hacer clic en el enlace que aparece a continuación y comencemos a darle vida
+                                a tus proyectos.
                             </p>
-                            <button>CUÉNTAME SOBRE TU PROYECTO</button>
+                            <a href="mailto:melizloor.info@gmail.com" class="no-select">CUÉNTAME SOBRE TU PROYECTO</a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="contacto" class="sec-contacto">
-                <div class="cont__box">
-                    <div class="cont__box__img">
-                        <div class="img__wall"></div>
+            <section class="sec-contacto">
+                <div class="cont_box sec__pd">
+                    <div class="cont_box__info">
+                        <img class="no-select" width="60" src="./assets/images/Ico.png">
+                        <b>MELIZLOOR</b>
+                        <hr>
+                        <p>
+                            Si buscas innovación y calidad en diseño y producción audiovisual, estoy aquí para colaborar
+                            contigo, explorar oportunidades y trabajar juntos en proyectos emocionantes.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot bg_txt--purple"></i> Guayaquil | Ecuador
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone bg_txt--lightblue"></i> 0962162233
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope bg_txt--fucsia"></i> melizloor.info@gmail.com
+                            </li>
+                        </ul>
                     </div>
-                    <div class="cont__box__formc">
-                        <div class="formc__box">
-                            <h3 class="content_titlle">Contacto</h3>
-                            <div class="content_line bg__line--purple"></div>
-                            <p>
-                                <b>¿Quieres contactarme?</b><br>
-                                Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
-                            </p>
-                            <form action='https://formspree.io/f/xleynqde' method='POST' name="formContacto"
-                                class="formc__content">
+                    <div class="cont_box__rs">
+                        <b>REDES SOCIALES</b>
+                        <ul>
+                            <footer-socialmedia></footer-socialmedia>
+                        </ul>
+                    </div>
+                    <div class="cont_box__form">
+                        <b>CONTACTO</b>
+                        <p>
+                            Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
+                        </p>
+                        <form action='https://formspree.io/f/xleynqde' method='POST' name="formContacto"
+                            class="formc__content">
+                            <div class="group">
                                 <div class="form__inputGroup">
                                     <label>Nombres:</label>
                                     <input class="formc__input" type="text" name="nombre" maxlength="50"
@@ -216,46 +229,48 @@
                                         pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" placeholder="name@correo.com" required>
                                     <span class="msm-error">Este campo no es valido</span>
                                 </div>
-                                <div class="form__inputGroup">
-                                    <label>Asunto:</label>
-                                    <input class="formcontato__input" type="text" name="asunto" maxlength="50"
-                                        data-tipo="asunto" placeholder="Asunto" required>
-                                    <span class="msm-error">Este campo no es valido</span>
-                                </div>
-                                <div class="form__inputGroup">
-                                    <label>Mensaje:</label>
-                                    <textarea class="formcontato__textarea" rows="5" name="mensaje" maxlength="300"
-                                        data-tipo="mensaje" placeholder="Mensaje" required></textarea>
-                                    <span class="msm-error">Este campo no es valido</span>
-                                </div>
-                                <div class="form__buttons no-select">
-                                    <button type="submit" id="formc_btn" class="formc__btn no-select" disabled>
-                                        Enviar mensaje
-                                        <i class="fa-solid fa-paper-plane"></i>
-                                    </button>
-                                    <!-- Cargando -->
-                                    <span class="btn-load-msm">
-                                        <div class="btn_flex">
-                                            <div class="loader"></div>
-                                            <small>Enviando mensaje.....</small>
-                                        </div>
-                                    </span>
-                                    <!-- Error -->
-                                    <span class="btn-error-msm center">
-                                        <div class="btn_flex">
-                                            <i class="fa-solid fa-xmark"></i>
-                                            <small class="center">Se ha producido un error inténtelo más tarde.</small>
-                                        </div>
-                                    </span>
-                                    <!-- Confirmación -->
-                                    <span class="btn-confirm-msm center">
-                                        <small>Menaje enviado correctamente</small>
-                                        <i class="fa-solid fa-check"></i>
-                                    </span>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="form__inputGroup">
+                                <label>Asunto:</label>
+                                <input class="formcontato__input" type="text" name="asunto" maxlength="50"
+                                    data-tipo="asunto" placeholder="Asunto" required>
+                                <span class="msm-error">Este campo no es valido</span>
+                            </div>
+                            <div class="form__inputGroup">
+                                <label>Mensaje:</label>
+                                <textarea class="formcontato__textarea" rows="5" name="mensaje" maxlength="300"
+                                    data-tipo="mensaje" placeholder="Mensaje" required></textarea>
+                                <span class="msm-error">Este campo no es valido</span>
+                            </div>
+                            <div class="form__buttons no-select">
+                                <button type="submit" id="formc_btn" class="formc__btn no-select" disabled>
+                                    Enviar mensaje
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                                <!-- Cargando -->
+                                <span class="btn-load-msm">
+                                    <div class="btn_flex">
+                                        <div class="loader"></div>
+                                        <small>Enviando mensaje.....</small>
+                                    </div>
+                                </span>
+                                <!-- Error -->
+                                <span class="btn-error-msm center">
+                                    <div class="btn_flex">
+                                        <i class="fa-solid fa-xmark"></i>
+                                        <small class="center">Se ha producido un error inténtelo más tarde.</small>
+                                    </div>
+                                </span>
+                                <!-- Confirmación -->
+                                <span class="btn-confirm-msm center">
+                                    <small>Menaje enviado correctamente</small>
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                            </div>
+                        </form>
+
                     </div>
+
                 </div>
             </section>
 
@@ -267,24 +282,13 @@
     <footer class="ml-footer no-select">
         <p>Desarrollado por Lenny Loor | 2023</p>
     </footer>
-    <!--  -->
-
-    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/owl.carousel.min.js'></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
     <script type="module" src="assets/js/main.js"></script>
-
-
     <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
     <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
     <script type="module" src="assets/js/filter-projects.js"></script>
- 
     <script type="text/javascript" src="assets/js/header.js"></script>
-
-
-    <!-- <script type="module" src="assets/api-form/send_correo.js"></script> -->
-    <!-- <script type="module" src="assets/js/form.js"></script> -->
+    <script type="module" src="assets/api-form/send_correo.js"></script>
+    <script type="module" src="assets/js/form.js"></script>
 </body>
 
 </html>

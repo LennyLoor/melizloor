@@ -10,6 +10,7 @@
     --bg-img-about-me-movil: url('../../images/wallpaper/wallpaper_sm_movil.png');
     --bg-img-academic: url('../../images/wallpaper/wallpaper_academic.png');
     --bg-img-footer: url('../images/wallpaper/wallpaper_footer.png');
+    --bg-img-tj: url('../images/wallpaper/wallpaper_tj.jpg');
 
     --bg-img-glasses: url('../../images/wallpaper/glasses.png');
     --bg-img-cup: url('../../images/wallpaper/cup.png');
@@ -31,7 +32,7 @@
     --pd-footer: .8rem 5rem;
 
     --pd-sec: 5rem;
-    --pd-sec-sm: 8rem 10rem 5rem 10rem;
+    --pd-sec-sm: 5.5rem 10rem 5rem 10rem;
     --pd-sec-menu: 7rem 2rem;
 
     --top-header: 7rem;
@@ -50,9 +51,10 @@
     --bg-lightblue-2: #0067b0;
     --bg-fucsia-1: #e53ec8;
     --bg-fucsia-2: #a32498;
+    --bg-fucsia-3: rgb(196, 96, 187);
 
     --bg-purple-1: #b547ff;
-    --bg-purple-2: #8b46d1;
+    --bg-purple-2: #9453bf;
     --bg-purple-3: #5b05af;
     --bg-purple-4: #f4e5ff;
 
@@ -70,6 +72,7 @@
     --bg-error-2: #f5c8c8; 
 
 
+    --bg-gradient-skill: linear-gradient(114deg, #00a8b3 0%, rgba(181, 71, 255, 1) 100%);
     --bg-gradient-purple: linear-gradient(90deg, rgba(181, 71, 255, 1) 0%, rgba(91, 5, 175, 1) 100%);
     --bg-gradient-fucsia: linear-gradient(90deg, rgba(229, 62, 200, 1) 0%, rgba(163, 36, 152, 1) 100%);
     --bg-gradient-lightblue: linear-gradient(90deg, rgba(23, 157, 221, 1) 0%, rgba(0, 103, 176, 1) 100%);

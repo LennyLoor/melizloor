@@ -18,3 +18,21 @@ class listSocialMedia extends HTMLElement {
     }
 }
 window.customElements.define('list-socialmedia', listSocialMedia);
+
+
+class footerSocialMedia extends HTMLElement {
+    constructor() {
+        super();
+        this.redes_sociales = data.redes_sociales;
+    }
+
+    connectedCallback() {
+        this.innerHTML = this.redes_sociales.map((data_) => {
+            return `  <li>
+                        <a href="${data_.enlace}" target="_blank"><i
+                        class="fa-brands fa-${data_.icono}"></i> ${data_.usuario}</a>
+                    </li>`;
+        }).join('')
+    }
+}
+window.customElements.define('footer-socialmedia', footerSocialMedia);

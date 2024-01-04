@@ -13,7 +13,7 @@ class listAcademic extends HTMLElement {
                         <div class="fa_item__info">
                             <h5 class="info-title">${data_.name}</h5>
                             <h5 class="info-subTitle">${data_.descripcion}</h5>
-                            <span class="info-line bg-${data_.id}"" ></span>
+                            <hr class="info-line bg-${data_.id}""> 
                             <div class="info-box">
                                 ${data_.info}                                   
                             </div>

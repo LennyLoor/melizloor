@@ -12,7 +12,6 @@
 }
 
 .fa_box {
-    background-color: rgb(221 221 221 / 46%);
     backdrop-filter: blur(10px);
 }
 
@@ -71,10 +70,12 @@
 
 .fa_item__info {
     width: auto;
-    /* height: 23rem; */
     position: relative;
     padding: 1rem;
     background: #fff;
+    box-shadow: 2px -7px 16px 0px rgb(0 0 0 / 9%);
+    -webkit-box-shadow: 2px -7px 16px 0px rgb(0 0 0 / 9%);
+    -moz-box-shadow: 4px -4px 18px 1px rgba(0, 0, 0, 0.22);
     transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
 
@@ -92,11 +93,17 @@
 
 .fa_item__info .info-line {
     display: inline-block;
-    width: 7rem;
-    height: 0.15rem;
+    width: 0;
+    transition: all 0.5s;
+    height: 0.02rem;
     border-radius: 0.5rem;
     opacity: 0;
     transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+li.fa_item:hover .info-line {
+    width: 7rem;
+    transition-delay: 0.4s;
 }
 
 .fa_item__info .info-box {
@@ -155,25 +162,29 @@
     background-color: white;
 }
 
-li.fa_item:hover {  
+li.fa_item:hover {
     transition: 1s;
 }
 
 li.fa_item:nth-child(1):hover,
-.fa_item__info { 
+.fa_item__info {
     height: 22rem;
-}  
-li.fa_item:nth-child(2):hover { 
-    height: 22rem; 
 }
-li.fa_item:nth-child(3):hover { 
-    height: 15.5rem; 
+
+li.fa_item:nth-child(2):hover {
+    height: 22rem;
 }
-li.fa_item:nth-child(4):hover { 
-    height: 32.5rem; 
+
+li.fa_item:nth-child(3):hover {
+    height: 15.5rem;
 }
-li.fa_item:nth-child(5):hover { 
-    height: 26.3rem; 
+
+li.fa_item:nth-child(4):hover {
+    height: 32.5rem;
+}
+
+li.fa_item:nth-child(5):hover {
+    height: 26.3rem;
 }
 
 li.fa_item:hover .fa_item__info {
@@ -290,7 +301,79 @@ li.fa_item:hover .fa_item__info .info-buttons {
     }
 
     .fa_item__logo {
+        width: 30%;
+    }
+    .fa_box {
+        padding: 0;
+    }
+    li.fa_item:nth-child(1):hover,
+    .fa_item__info {
+        height: 20.5rem;
+    }
+
+    li.fa_item:nth-child(2):hover {
+        height: 20.5rem;
+    }
+
+    li.fa_item:nth-child(3):hover {
+        height: 14.5rem;
+    }
+
+    li.fa_item:nth-child(4):hover {
+        height: 28.5rem;
+    }
+
+    li.fa_item:nth-child(5):hover {
+        height: 22.3rem;
+    }
+
+    li.fa_item:hover .fa_item__info {
+        padding: 1.5rem;
+        transform: translateY(-8.5rem);
+    }
+
+}
+@media only screen and (max-width: 432px) {
+    .sec-academic {
+        padding: 5rem 2rem;
+    }
+
+    .fa_item {
         width: 100%;
     }
 
+    .fa_item__logo {
+        width: 50%;
+    }
+    .fa_box {
+        padding: 0;
+    }
+    li.fa_item:hover .fa_item__info{
+        font-size: .9rem;
+    }
+    li.fa_item:nth-child(1):hover,
+    .fa_item__info {
+        height: 20.5rem;
+    }
+
+    li.fa_item:nth-child(2):hover {
+        height: 20.5rem;
+    }
+
+    li.fa_item:nth-child(3):hover {
+        height: 14rem;
+    }
+
+    li.fa_item:nth-child(4):hover {
+        height: 28.2rem;
+    }
+
+    li.fa_item:nth-child(5):hover {
+        height: 23rem;
+    }
+
+    li.fa_item:hover .fa_item__info {
+        padding: 1.5rem;
+        transform: translateY(-8.5rem);
+    }
 }

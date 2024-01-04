@@ -8,15 +8,10 @@ class listHobbies extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = this.hobby.map((data_) =>{
-            return ` <li>
-                        <div class="hb__item">
-                            <div class="hb__icon">
-                                <i class="fa-solid fa-${data_.icon} hb__icon--lightblue"></i>
-                            </div>
-                            <div class="hb__text">
-                                <span>${data_.name}</span>
-                            </div>
-                        </div>
+            return ` <li>                         
+                        <a class="hb__icon" title="${data_.name}">
+                            <i class="fa-solid fa-${data_.icon} hb__icon--lightblue"></i>
+                        </a>                          
                     </li>`;
         }).join('')
     }

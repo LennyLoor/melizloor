@@ -155,13 +155,23 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .header__logo img{
+        width: 45px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
 
     .wall-home {
         height: auto;
+        background-position: left;
     }
-
+    .home_image{
+        width: 70%;
+        margin: 0 auto;
+    }
     .home_box {
-        padding: 5rem 2rem 2rem 2rem;
+        padding: 5rem 3rem 4rem 3rem;
         flex-direction: column;
     }
 

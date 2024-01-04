@@ -79,6 +79,7 @@
 .item-contacto a {
     background: var(--bg-purple-1);
     background: var(--bg-gradient-purple);
+    color: white;
 }
 
 .item-contacto a:hover {
@@ -102,16 +103,17 @@
 
 .selected-4 {
     transition: .8s;
-    color: var(--bg-fucsia-1) !important;
+    color: var(--bg-lightblue-1) !important;
 }
 
 .selected-5 {
     transition: .8s;
-    color: var(--bg-lightblue-1) !important;
+    color: var(--bg-purple-2) !important;
+    color: white!important;
 }
 
 .selected-6 {
-    background: var(--bg-purple-2) !important;
+    background: var(--bg-fucsia-2) !important;
 }
 
 /* ------------------------------------------

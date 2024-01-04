@@ -1,0 +1,74 @@
+.sec-tj {
+    height: auto;
+}
+
+.sec-tj ::selection {
+    background-color: var(--bg-lightblue-1);
+    color: var(--bg-white);
+}
+
+.sec-tj {
+    position: relative;
+}
+
+.overlay-gray {
+    background-color: #111112;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(0.5);
+    z-index: 1;
+}
+
+.img__tj {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/wallpaper/wallpaper_tj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.tj_box {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.tj_box__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tj_content {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.tj_content a{
+    text-decoration: none;
+    background-color: var(--bg-lightblue-2);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    border: none;
+    cursor: pointer; 
+    transition: 1s;
+}
+
+.tj_content a:hover {
+    background-color: white;
+    color: var(--bg-dark-2);
+}
+/* ------------------------------------------
+                [RESPONSIVE]
+------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+    .tj_content p{
+        line-height: 1.2rem;
+    } 
+}

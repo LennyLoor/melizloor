@@ -7,14 +7,88 @@
     color: var(--bg-white);
 }
 
-.cont__box {
-    width: 100%;
-    height: 100%;
+.cont_box {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.cont_box hr {
+    width: 25%;
+    margin-left: 0;
+    border: 1px solid var(--bg-purple-2);
+}
+
+/*  */
+.cont_box__info {
+    width: 30%;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    text-align: justify;
+}
+
+.cont_box__info p {
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+.cont_box__info ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: .5rem;
+}
+
+.cont_box__info ul li {
+    margin-bottom: 1rem;
+}
+
+.cont_box__info ul li i {
+    margin-right: 1rem;
+}
+
+/*  */
+.cont_box__rs {
+    width: 20%;
+}
+
+.cont_box__rs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.cont_box__rs ul li {
+    margin-bottom: 1rem;
     display: flex;
 }
 
-.cont__box__img {
-    width: 40%;
+.cont_box__rs ul li a {
+    text-decoration: none;
+    padding-right: 1rem;
+    color: var(--bg-dark-1);
+}
+
+.cont_box__rs ul li a:hover {
+    color: var(--bg-purple-2);
+}
+
+.cont_box__rs ul li i {
+    font-size: .8rem;
+    border: 1px solid var(--bg-purple-2);
+    background: var(--bg-purple-2);
+    color: white;
+    padding: .5rem;
+    margin-right: .5rem;
+    border-radius: 1rem;
+}
+
+/*  */
+.cont_box__form {
+    width: 50%;
 }
 
 .img__wall {
@@ -27,17 +101,6 @@
     background-position: 73% 0%;
 }
 
-.cont__box__formc {
-    width: 60%;
-}
-
-.formc__box {
-    margin: var(--top-header) 4rem;
-}
-
-.formc__box p {
-    line-height: 2rem;
-}
 
 .formc__content {
     display: flex;
@@ -45,8 +108,23 @@
     gap: 1rem;
 }
 
+.formc__content label {
+    font-size: small;
+    user-select: none;
+}
+
+.group {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.group .form__inputGroup {
+    min-width: auto;
+}
+
 .form__inputGroup {
-    width: calc((100% - 1rem) / 1);    
+    width: calc((100% - 1rem) / 1);
     min-width: 100%;
     display: flex;
     flex-direction: column;
@@ -54,8 +132,8 @@
 }
 
 .form__inputGroup input,
-textarea { 
-	max-width: 100%;
+textarea {
+    max-width: 100%;
     background-color: var(--bg-gray-4);
     border: 1px solid var(--bg-gray);
     padding: .5rem;
@@ -63,9 +141,10 @@ textarea {
     outline: none;
 }
 
-.form__inputGroup textarea{
-    width: auto!important;
+.form__inputGroup textarea {
+    width: auto !important;
 }
+
 .input-invalid {
     border: 1px solid var(--bg-purple-1) !important;
 }
@@ -116,30 +195,35 @@ textarea {
     background-color: var(--bg-purple-2);
 }
 
-.btn-confirm-msm{
+.btn-confirm-msm {
     background-color: var(--bg-success);
     color: var(--bg-white);
     border-radius: 2rem;
     padding: .5rem 1rem;
     display: none;
 }
-.btn-confirm-msm small{
+
+.btn-confirm-msm small {
     margin-right: .5rem;
 }
-.btn-load-msm{
+
+.btn-load-msm {
     background-color: var(--bg-warm);
     color: var(--bg-white);
     border-radius: 2rem;
     padding: .5rem 1rem;
     display: none;
 }
-.btn-load-msm small{
+
+.btn-load-msm small {
     margin-left: .5rem;
 }
-.btn_flex{
+
+.btn_flex {
     display: flex;
 }
-.btn-error-msm{
+
+.btn-error-msm {
     background-color: var(--bg-error-2);
     color: var(--bg-error);
     width: 100%;
@@ -147,11 +231,13 @@ textarea {
     border-radius: .5rem;
     padding: 1rem 1rem;
     display: none;
-} 
-.btn-error-msm i{
+}
+
+.btn-error-msm i {
     font-size: 1.5rem;
     margin-right: .5rem;
 }
+
 /* ------------------------------------------
                 [RESPONSIVE]
 ------------------------------------------- */
@@ -175,4 +261,40 @@ textarea {
         margin: 3rem 2rem;
     }
 
+    /*  */
+    .cont_box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cont_box>div {
+        width: 100%;
+    }
+
+    .cont_box__rs ul footer-socialmedia {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 432px) {
+    .group {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .group .form__inputGroup {
+        width: 100%;
+    }
+
+    .cont_box {
+        gap: 1.5rem;
+    }
+
+    .cont_box__rs ul footer-socialmedia {
+        display: flex;
+        flex-direction: column;
+    }
 }

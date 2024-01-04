@@ -55,7 +55,7 @@
                 menu_.forEach((link) => {
                     const item__ = document.querySelector(".menu__list__item a[href*=" + id + "]"); 
                     link.setAttribute('class', '');
-                    link.addEventListener('click', function () {
+                    link.addEventListener('click', function (a) { 
                         responsiveMenu(x);
                     });
                     if (item__ != null) {
