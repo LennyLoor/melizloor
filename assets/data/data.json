@@ -391,6 +391,21 @@
         },
         {
             "id": "1",
+            "data_categoria": "Contenido | Redes sociales", 
+            "image": "bitekso_post.png",
+            "name_image": "Bitekso | Proyectos Municipales",
+            "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Photoshop' src='assets/images/Icon/Icon_adobe_psd.svg'>",
+            "name_project": "Bitekso | Proyectos Municipales",
+            "tipo_project": "Instagram post",
+            "btn_repositorio": "none",
+            "url_repositorio": "",
+            "btn_enlace": "none",
+            "tipoDeEnlace": "",
+            "url_enlace": "",
+            "btn_imagen": "block"
+        },
+        {
+            "id": "1",
             "data_categoria": "Animaciones 2D - 3D", 
             "image": "video_3d_bitekso.png", 
             "herramientas": "<img class='no-select' title='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.svg'><img class='no-select' title='Adobe Photoshop' src='assets/images/Icon/Icon_adobe_psd.svg'><img class='no-select' title='Adobe Cinema 4d' src='assets/images/Icon/Icon_cinema_4D.svg'><img class='no-select' title='Adobe Adobe After Effects' src='assets/images/Icon/Icon_adobe_pr.svg'>",
