@@ -155,7 +155,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .header__logo img{
+    .header__logo img {
         width: 45px;
     }
 }
@@ -166,10 +166,12 @@
         height: auto;
         background-position: left;
     }
-    .home_image{
+
+    .home_image {
         width: 70%;
         margin: 0 auto;
     }
+
     .home_box {
         padding: 5rem 3rem 4rem 3rem;
         flex-direction: column;

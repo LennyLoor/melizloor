@@ -45,9 +45,8 @@
 .fa_item {
     list-style: none;
     position: relative;
-    /*  width: 23rem; */
     width: 15rem;
-    height: 16rem;
+    height: 15rem;
     background-color: white;
     border-radius: 1rem;
     overflow: hidden;
@@ -101,25 +100,24 @@
     transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
 
-li.fa_item:hover .info-line {
+.fa_item:hover .info-line {
     width: 7rem;
     transition-delay: 0.4s;
 }
 
 .fa_item__info .info-box {
-    font-family: "Merriweather", sans-serif;
-    line-height: 2;
-    margin: 1rem 0;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
     font-size: small;
-    color: rgba(21, 37, 54, 0.7);
     opacity: 0;
     transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
 
 .list-detalles {
     text-align: left;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
     margin: .5rem 0;
+    padding: 0 0 0 1.5rem;
     list-style-type: square;
     font-family: "Merriweather", sans-serif;
     font-size: small;
@@ -133,7 +131,6 @@ li.fa_item:hover .info-line {
     flex-direction: column;
     left: 0;
     left: 0;
-    /* bottom: 0; */
     width: 100%;
     font-size: small;
     text-transform: uppercase;
@@ -166,25 +163,26 @@ li.fa_item:hover {
     transition: 1s;
 }
 
+/* HEIGHT CARD */
 li.fa_item:nth-child(1):hover,
 .fa_item__info {
-    height: 22rem;
+    height: 28rem;
 }
 
 li.fa_item:nth-child(2):hover {
-    height: 22rem;
+    height: 19.5rem;
 }
 
 li.fa_item:nth-child(3):hover {
-    height: 15.5rem;
+    height: 14rem;
 }
 
 li.fa_item:nth-child(4):hover {
-    height: 32.5rem;
+    height: 28.5rem;
 }
 
 li.fa_item:nth-child(5):hover {
-    height: 26.3rem;
+    height: 24.3rem;
 }
 
 li.fa_item:hover .fa_item__info {
@@ -197,7 +195,6 @@ li.fa_item:hover .fa_item__info .info-box,
 li.fa_item:hover .fa_item__info .info-buttons {
     opacity: 1;
 }
-
 
 /* LOGOS */
 .logo-espol {
@@ -223,67 +220,67 @@ li.fa_item:hover .fa_item__info .info-buttons {
 
 /* COLORES */
 .brd-top-espol {
-    border-top: 1px solid #243363;
+    border-top: 1px solid var(--bg-espol);
 }
 
 .bg-espol {
-    background-color: #243363;
+    background-color: var(--bg-espol);
 }
 
 .txt-color-espol {
-    color: #243363;
+    color: var(--bg-espol);
 }
 
 /*  */
 .brd-top-alura {
-    border-top: 1px solid #528a8d;
+    border-top: 1px solid var(--bg-alura);
 }
 
 .bg-alura {
-    background-color: #528a8d;
+    background-color: var(--bg-alura);
 }
 
 .txt-color-alura {
-    color: #528a8d;
+    color: var(--bg-alura);
 }
 
 /*  */
 .brd-top-cen {
-    border-top: 1px solid #12144b;
+    border-top: 1px solid var(--bg-cen);
 }
 
 .bg-cen {
-    background-color: #12144b;
+    background-color: var(--bg-cen);
 }
 
 .txt-color-cen {
-    color: #12144b;
+    color: var(--bg-cen);
 }
 
 /*  */
 .brd-top-platzi {
-    border-top: 1px solid #77a02c;
+    border-top: 1px solid var(--bg-platzi);
 }
 
 .bg-platzi {
-    background-color: #77a02c;
+    background-color: var(--bg-platzi);
 }
 
 .txt-color-platzi {
-    color: #77a02c;
+    color: var(--bg-platzi);
 }
 
 /*  */
 .brd-top-linkedIn {
-    border-top: 1px solid #3275b9;
+    border-top: 1px solid var(--bg-linkedIn);
 }
 
 .bg-linkedIn {
-    background-color: #3275b9;
+    background-color: var(--bg-linkedIn);
 }
 
 .txt-color-linkedIn {
-    color: #3275b9;
+    color: var(--bg-linkedIn);
 }
 
 /* ------------------------------------------
@@ -303,28 +300,30 @@ li.fa_item:hover .fa_item__info .info-buttons {
     .fa_item__logo {
         width: 30%;
     }
+
     .fa_box {
         padding: 0;
     }
+
     li.fa_item:nth-child(1):hover,
     .fa_item__info {
-        height: 20.5rem;
+        height: 22rem;
     }
 
     li.fa_item:nth-child(2):hover {
-        height: 20.5rem;
+        height: 18.5rem;
     }
 
     li.fa_item:nth-child(3):hover {
-        height: 14.5rem;
+        height: 13rem;
     }
 
     li.fa_item:nth-child(4):hover {
-        height: 28.5rem;
+        height: 25rem;
     }
 
     li.fa_item:nth-child(5):hover {
-        height: 22.3rem;
+        height: 20.2rem;
     }
 
     li.fa_item:hover .fa_item__info {
@@ -333,7 +332,8 @@ li.fa_item:hover .fa_item__info .info-buttons {
     }
 
 }
-@media only screen and (max-width: 432px) {
+
+@media only screen and (max-width: 479px) {
     .sec-academic {
         padding: 5rem 2rem;
     }
@@ -345,31 +345,34 @@ li.fa_item:hover .fa_item__info .info-buttons {
     .fa_item__logo {
         width: 50%;
     }
+
     .fa_box {
         padding: 0;
     }
-    li.fa_item:hover .fa_item__info{
+
+    li.fa_item:hover .fa_item__info {
         font-size: .9rem;
     }
+
     li.fa_item:nth-child(1):hover,
     .fa_item__info {
-        height: 20.5rem;
+        height: 24.5rem;
     }
 
     li.fa_item:nth-child(2):hover {
-        height: 20.5rem;
+        height: 18.5rem;
     }
 
     li.fa_item:nth-child(3):hover {
-        height: 14rem;
+        height: 13rem;
     }
 
     li.fa_item:nth-child(4):hover {
-        height: 28.2rem;
+        height: 25rem;
     }
 
     li.fa_item:nth-child(5):hover {
-        height: 23rem;
+        height: 21.2rem;
     }
 
     li.fa_item:hover .fa_item__info {

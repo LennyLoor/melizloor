@@ -23,7 +23,7 @@
 }
 
 /* Images */
-.hb_box { 
+.hb_box {
     margin: 0 auto;
     margin-top: 2rem;
 }
@@ -33,7 +33,7 @@
     background-color: var(--bg-fucsia-3);
     width: auto;
     color: white;
-    border-radius: 10rem; 
+    border-radius: 10rem;
     display: inline-flex;
     padding: 0.1rem 1rem;
 }
@@ -52,34 +52,38 @@
     gap: 1rem;
 }
 
-.hb_box ul li { 
+.hb_box ul li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 0 0 -10px; 
-} 
+    margin: 0 0 0 -10px;
+}
+
 .hb_box ul li .hb__icon {
     text-align: center;
     color: #444444;
-  }
-  .hb_box ul li .hb__icon i {
+}
+
+.hb_box ul li .hb__icon i {
     display: inline-block;
     font-size: 0;
     line-height: 1;
     cursor: pointer;
-    padding: 1rem; 
+    padding: 1rem;
     border-radius: 50%;
     text-align: center;
     position: relative;
     color: #444444;
     z-index: 1;
     transition: all 0.2s ease-in-out;
-  }
-  .hb_box ul li .hb__icon i:before {
+}
+
+.hb_box ul li .hb__icon i:before {
     font-size: 20px;
     z-index: 2;
     position: relative;
-  }
-  .hb_box ul li .hb__icon i:after {
+}
+
+.hb_box ul li .hb__icon i:after {
     opacity: 0;
     pointer-events: none;
     position: absolute;
@@ -91,7 +95,7 @@
     content: "";
     transform: scale(0.2);
     transition: all 0.2s ease-in-out;
-  }
+}
 
 .hb_box ul li .hb__icon {
     font-size: 1.5rem;
@@ -105,7 +109,8 @@
     transform: scale(1);
     opacity: 1;
 }
-.hb_box ul li .hb__icon i:after{
+
+.hb_box ul li .hb__icon i:after {
     background-color: var(--bg-lightblue-1);
 }
 
@@ -222,7 +227,7 @@
         padding: var(--pd-sec-menu);
         flex-direction: column;
     }
-    
+
     .sm__box__content {
         width: 100%;
     }
@@ -231,12 +236,15 @@
         width: 100%;
         text-align: center;
     }
+
     .sm_box {
         padding: 0;
     }
-    .sm__images{
+
+    .sm__images {
         display: none;
     }
+
     .wall-sm {
         background-image: var(--bg-img-about-me-movil);
         background-position: 98% 0;

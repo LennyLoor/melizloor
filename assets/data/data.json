@@ -141,7 +141,7 @@
             "urlBtn2": "https://www.linkedin.com/in/lennyloor/details/certifications/",
             "visibility_btn1": "block",
             "visibility_btn2": "block",
-            "info": "<b>Formaciones</b><br><ul class='list-detalles'><li> Adobe XD </li>  <li>Fundamentos de Project Management </li> <li> Figma </li>"
+            "info": "<b>Formaciones</b><br><ul class='list-detalles'><li>HTML5 práctico: Scroll y presentación de contenidos.</li><li>Design Thinking: Experiencia del cliente.</li> <li> Diseño de interfaz (UI) avanzado.</li><li>Google Ads: Creación de campañas.</li><li>Habilidades de coaching para líderes y gerentes.</li><li>Liderazgo colaborativo.</li>"
         },
         {
             "id": "platzi",
@@ -153,7 +153,7 @@
             "urlBtn2": "https://www.linkedin.com/in/lennyloor/details/certifications/",
             "visibility_btn1": "block",
             "visibility_btn2": "block",
-            "info": "<b>Formaciones</b><br><ul class='list-detalles'><li> Adobe XD </li>  <li>Fundamentos de Project Management </li> <li> Figma </li>"
+            "info": "<b>Formaciones</b><br><ul class='list-detalles'><li> Adobe XD. </li>  <li>Fundamentos de Project Management.</li> <li> Figma. </li>"
         },
         {
             "id": "cen",
@@ -165,7 +165,7 @@
             "urlBtn2": "",
             "visibility_btn1": "block",
             "visibility_btn2": "none",
-            "info": "<b>Programa</b><br>Programa de Ingles"
+            "info": "<b>Programa</b><br>Programa de Ingles."
         },
         {
             "id": "alura",
@@ -177,7 +177,7 @@
             "urlBtn2": "https://app.aluracursos.com/user/lenny-loor/program/certificate",
             "visibility_btn1": "block",
             "visibility_btn2": "block",
-            "info": "<b>Programa</b><br>Oracle Next Education F2 T5 Front-end <br><b>Formaciones</b> <ul class='list-detalles'> <li>Principiante en Programación</li> <li>Desarrollo Personal</li> <li>Business Agility</li> <li>Front End</li> <li>Emprendimiento</li> <li>React</li> </ul>"
+            "info": "<b>Programa</b><br>Oracle Next Education F2 T5 Front-end. <br><b>Formaciones</b> <ul class='list-detalles'> <li>Principiante en Programación.</li> <li>Desarrollo Personal.</li> <li>Business Agility.</li> <li>Front End.</li> <li>Emprendimiento.</li> <li>React.</li> </ul>"
         },
         {
             "id": "espol",
@@ -189,7 +189,7 @@
             "urlBtn2": "https://www.senescyt.gob.ec/consulta-titulos-web/faces/vista/consulta/consulta.xhtml",
             "visibility_btn1": "block",
             "visibility_btn2": "block",
-            "info": "<b>Título Obtenido</b><br>Lcda. Diseño y producción Audiovisual<br><b>Senesyt</b><br>Graduado con número de registro:<BR> 1021-2018-1961447"
+            "info": "<b>Título Obtenido</b><br>Lcda. Diseño y producción Audiovisual.<br><b>Senesyt</b><br>Graduado con número de registro:<BR> 1021-2018-1961447"
         }
     ],
     "projects": [
@@ -464,27 +464,27 @@
     "redes_sociales":[
         {
             "icono":"linkedin-in",
-            "usuario":"@lennyloor",
+            "name":"Linkedin",
             "enlace":"https://www.linkedin.com/in/lennyloor/"
         },
         {
             "icono":"behance",
-            "usuario":"@LennyLoor",
+            "name":"Behance",
             "enlace":"https://www.behance.net/LennyLoor"
         },
         {
             "icono":"whatsapp",
-            "usuario":"+593 9216 2233",
+            "name":"Whatsapp",
             "enlace":"https://wa.link/3m5stm"
         },
         {
             "icono":"youtube",
-            "usuario":"@melizloor",
+            "name":"Youtube",
             "enlace":"https://www.youtube.com/@melizloor"
         },
         {
             "icono":"github",
-            "usuario":"@LennyLoor",
+            "name":"Github",
             "enlace":"https://github.com/LennyLoor"
         }
     ]

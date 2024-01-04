@@ -9,8 +9,8 @@
     --bg-img-about-me: url('../../images/wallpaper/wallpaper_sm.png');
     --bg-img-about-me-movil: url('../../images/wallpaper/wallpaper_sm_movil.png');
     --bg-img-academic: url('../../images/wallpaper/wallpaper_academic.png');
+    --bg-img-tj: url('../../images/wallpaper/wallpaper_tj.jpg');
     --bg-img-footer: url('../images/wallpaper/wallpaper_footer.png');
-    --bg-img-tj: url('../images/wallpaper/wallpaper_tj.jpg');
 
     --bg-img-glasses: url('../../images/wallpaper/glasses.png');
     --bg-img-cup: url('../../images/wallpaper/cup.png');
@@ -71,6 +71,13 @@
     --bg-error: #d44646; 
     --bg-error-2: #f5c8c8; 
 
+    --bg-espol: #243363;
+    --bg-alura: #528a8d;
+    --bg-cen: #12144b;
+    --bg-platzi: #77a02c;
+    --bg-linkedIn: #3275b9;
+    
+    --bg-overlay: #111112;
 
     --bg-gradient-skill: linear-gradient(114deg, #00a8b3 0%, rgba(181, 71, 255, 1) 100%);
     --bg-gradient-purple: linear-gradient(90deg, rgba(181, 71, 255, 1) 0%, rgba(91, 5, 175, 1) 100%);

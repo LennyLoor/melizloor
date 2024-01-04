@@ -77,30 +77,20 @@
 }
 
 .cont_box__rs ul li i {
-    font-size: .8rem;
+    width: 1rem;
+    font-size: 1rem;
     border: 1px solid var(--bg-purple-2);
     background: var(--bg-purple-2);
     color: white;
     padding: .5rem;
     margin-right: .5rem;
-    border-radius: 1rem;
+    border-radius: .2rem;
 }
 
 /*  */
 .cont_box__form {
     width: 50%;
 }
-
-.img__wall {
-    width: 100%;
-    height: 100%;
-    filter: grayscale(100%);
-    background-image: var(--bg-img-contact);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 73% 0%;
-}
-
 
 .formc__content {
     display: flex;
@@ -278,7 +268,7 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 432px) {
+@media only screen and (max-width: 479px) {
     .group {
         display: flex;
         gap: 1rem;

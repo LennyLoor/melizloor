@@ -30,7 +30,7 @@ class footerSocialMedia extends HTMLElement {
         this.innerHTML = this.redes_sociales.map((data_) => {
             return `  <li>
                         <a href="${data_.enlace}" target="_blank"><i
-                        class="fa-brands fa-${data_.icono}"></i> ${data_.usuario}</a>
+                        class="fa-brands fa-${data_.icono}"></i> ${data_.name}</a>
                     </li>`;
         }).join('')
     }

@@ -1,10 +1,5 @@
 .sec-Skills ::selection {
-  background-color: var(--bg-purple-1);
-  color: var(--bg-white);
-}
-
-.sk__content ::selection {
-  background-color: var(--bg-purple-3);
+  background-color: var(--bg-lightblue-1);
   color: var(--bg-white);
 }
 
@@ -19,8 +14,6 @@
 }
 
 /*  */
-
-
 .sk_box .content_list {
   width: 100%;
   margin: 0;
@@ -98,11 +91,6 @@
 }
 
 /*  */
-.fill-purple {
-  filter: invert(0);
-
-}
-
 .sk_box__content {
   display: flex;
   flex-direction: column;
@@ -110,16 +98,6 @@
   margin: auto;
 }
 
-.sk__content {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 1.5rem;
-}
-
-.sk__icon--purple {
-  color: var(--bg-purple-2);
-}
 
 .sk__item {
   width: 100%;
@@ -140,23 +118,22 @@
   border-bottom-right-radius: 1rem;
 }
 
- 
+
 /* ------------------------------------------
                 [RESPONSIVE]
 ------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
-
-  .sk_box  { 
+  .sk_box {
     padding: 2rem;
-    padding-top: 7rem!important;
-  } 
+    padding-top: 7rem !important;
+  }
 
 }
 
-@media only screen and (max-width: 432px) {
-  .sk_box  { 
-    padding: 1rem!important;
-    padding-top: 5rem!important;
-  } 
+@media only screen and (max-width: 479px) {
+  .sk_box {
+    padding: 1rem !important;
+    padding-top: 5rem !important;
+  }
 }

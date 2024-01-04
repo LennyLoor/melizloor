@@ -273,31 +273,29 @@
     top: 35px;
 }
 
-
 /* ------------------------------------------
                 [RESPONSIVE]
 ------------------------------------------- */
-@media screen and (min-width: 1400px) {
- 
-
-}
-
-@media only screen and (max-width: 768px) { 
-    .ep_box .content_list .list .item{
+@media only screen and (max-width: 768px) {
+    .ep_box .content_list .list .item {
         width: 100%;
-    } 
-    .ep_box .content_list .list .item{
-        margin: 0; 
+    }
+
+    .ep_box .content_list .list .item {
+        margin: 0;
         padding-bottom: 1rem;
     }
-    .ep_box .title p{
+
+    .ep_box .title p {
         font-size: .8rem;
     }
-    .ep_box .item-data .content{
+
+    .ep_box .item-data .content {
         font-size: .7rem;
         line-height: .2rem;
     }
-    .ep_box .item-data .buttons{
-        font-size: .7rem; 
+
+    .ep_box .item-data .buttons {
+        font-size: .7rem;
     }
 }
