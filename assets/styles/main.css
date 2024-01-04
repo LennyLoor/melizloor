@@ -215,6 +215,11 @@ body::-webkit-scrollbar-thumb {
         font-size: 3rem;
     }
 }
+@media screen and (max-width: 1200px) {
+    body{
+        font-size: .9rem;
+    }
+}
 
 @media only screen and (max-width: 768px) { 
     .content__list li {

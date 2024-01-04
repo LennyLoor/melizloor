@@ -221,7 +221,7 @@
         },
         { 
             "data_categoria": "Diseño Web", 
-            "image": "Alura-Geek.png", 
+            "image": "alura_geek.png", 
             "herramientas": "<img class='no-select' title='HTML5' src='assets/images/Icon/Icon_html.svg'><img class='no-select' title='CSS' src='assets/images/Icon/Icon_css.svg'><img class='no-select' title='js' src='assets/images/Icon/Icon_js.svg'><img class='no-select' title='json' src='assets/images/Icon/Icon_json.svg'><img class='no-select' title='React' src='assets/images/Icon/Icon_react.svg'>",
             "name_project": "AluraGeek",
             "tipo_project": "Challenge Oracle",
