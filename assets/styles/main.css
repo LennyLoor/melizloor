@@ -12,6 +12,10 @@ textarea {
     font-family: 'Lato', sans-serif;
 }
 
+section{    
+    overflow: hidden;
+}
+
 /* -----------------------------------------
                 [CONTENT]
 ------------------------------------------- */
@@ -28,7 +32,7 @@ textarea {
 .sec__pd {
     padding: var(--pd-sec);
 }
-
+ 
 /* TITLE SECTION */
 .content_titlle {
     margin-bottom: .5rem;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <!-- Style -->
     <link rel="stylesheet" href="assets/styles/variables.css">
     <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/header.css"> 
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/animateScroll.css">
     <!-- Style / Sections -->
     <link rel="stylesheet" href="assets/styles/sections/home.css">
     <link rel="stylesheet" href="assets/styles/sections/about-me.css">
@@ -23,10 +25,13 @@
     <script src="https://kit.fontawesome.com/b229e29af4.js" crossorigin="anonymous"></script>
 
     <!--  -->
-    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script> 
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
     <!-- Stellar -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="assets/js/scrollMagic/ScrollMagic.min.js"></script>
+    <script src="assets/js/scrollMagic/plugins/animation.gsap.min.js"></script>
+    <script src="assets/js/scrollMagic/plugins/debug.addIndicators.min.js"></script>
+
 </head>
 
 <body>
@@ -60,7 +65,6 @@
 
             <section id="home" class="sec-home wall-home">
                 <div class="home_box">
-
                     <div class="home_box__info">
                         <h1>
                             <b>Hola! </b>
@@ -75,7 +79,6 @@
                             <list-socialmedia class="info__network"></list-socialmedia>
                         </ul>
                     </div>
-
                     <div class="home_image no-select">
                         <img id="image-gif" src="assets/images/wallpaper/wallpaper-foto-intro.gif">
                     </div>
@@ -83,15 +86,13 @@
             </section>
 
             <section id="about-me" class="sec-about-me wall-sm paused">
-
                 <div class="sm__images">
                     <wallpaper-elements></wallpaper-elements>
                 </div>
-
                 <div class="sm_box sec__pd--sm center">
                     <div class="sm__box__content ">
                         <h3 class="content_titlle">Sobre mi</h3>
-                        <div class="content_line bg__line--fucsia"></div>
+                        <div id="sm_line" class="content_line bg__line--fucsia"></div>
                         <div class="sm__content">
                             <p>
                             <h3 class="title">Lenny Melissa</h3>
@@ -134,7 +135,7 @@
                 <div class="fa_box sec__pd">
                     <div class="fa_box__content">
                         <h3 class="content_titlle">Formación académica</h3>
-                        <div class="content_line bg__line--purple"></div>
+                        <div id="fa_line" class="content_line bg__line--purple"></div>
                         <div class="fa_content">
                             <ul class="fa_list">
                                 <list-academic></list-academic>
@@ -148,7 +149,7 @@
                 <div class="ep_box sec__pd">
                     <div class="ep_box__content">
                         <h3 class="content_titlle">Experiencia profesional</h3>
-                        <div class="content_line bg__line--lightblue"></div>
+                        <div id="exp_line" class="content_line bg__line--lightblue"></div>
                         <div class="content_list">
                             <div class="categories" id="categories">
                                 <a href="#" class="active">Branding</a>
@@ -167,10 +168,10 @@
 
             <section id="contacto" class="sec-tj img__tj" data-stellar-background-ratio="0.5">
                 <div class="overlay-gray"></div>
-                <div class="tj_box sec__pd">
+                <div id="tj_box" class="tj_box sec__pd">
                     <div class="tj_box__content">
                         <h3 class="content_titlle">Trabajemos juntos</h3>
-                        <div class="content_line bg__line--lightblue"></div>
+                        <div id="tj_line" class="content_line bg__line--lightblue"></div>
                         <div class="tj_content">
                             <p>
                                 ¿Te gustaría que colaboremos? <br>
@@ -270,9 +271,7 @@
                                 </span>
                             </div>
                         </form>
-
                     </div>
-
                 </div>
             </section>
 

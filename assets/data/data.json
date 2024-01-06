@@ -1,18 +1,18 @@
 {
     "home_wallpaper":[
-        {
+        { 
             "image": "glasses"
         },
-        {
+        { 
             "image": "cup"
         },
-        {
+        { 
             "image": "usb"
         },
-        {
+        { 
             "image": "headphones"
         },
-        {
+        { 
             "image": "mouse"
         }
     ],
