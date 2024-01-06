@@ -7,7 +7,7 @@
 }
 
 .sec-academic ::selection {
-    background-color: var(--bg-fucsia-1);
+    background-color: var(--bg-purple-1);
     color: var(--bg-white);
 }
 
