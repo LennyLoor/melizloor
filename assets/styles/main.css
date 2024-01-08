@@ -220,8 +220,10 @@ body::-webkit-scrollbar-thumb {
     body {
         font-size: .8rem;
     }
-
     .sec__pd {
         padding: 5rem 2rem;
+    }
+    .loader-icon{
+        width: 150px;
     }
 }
