@@ -109,6 +109,86 @@
     background: var(--bg-fucsia-2) !important;
 }
 
+/* SWITCH */
+
+@keyframes colors {
+
+    0%,
+    100% {
+        background-color: #fff;
+    }
+
+    60% {
+        background-color: #def;
+    }
+}
+
+
+.ml_language {
+    margin-left: 1rem;
+}
+
+.ml_language input {
+    pointer-events: none;
+    position: absolute;
+    visibility: hidden;
+}
+
+.ml_language .lang {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: .8rem;
+    font-weight: bold;
+    margin: auto;
+    position: relative;
+}
+
+.ml_language .lang::before {
+    background-color: var(--bg-lightblue-1);
+    border-radius: 3px;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all .3s ease;
+    width: 100%;
+}
+
+.ml_language input:checked+.lang::before {
+    transform: rotate(90deg);
+    background-color: var(--bg-fucsia-1);
+}
+
+.ml_language .lang span {
+    left: 50%;
+    line-height: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+}
+
+.ml_language .lang .es {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ml_language input:checked+.lang .es {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0);
+}
+
+.ml_language input:checked+.lang .en {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
 /* ------------------------------------------
                 [RESPONSIVE]
 ------------------------------------------- */

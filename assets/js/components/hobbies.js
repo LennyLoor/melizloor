@@ -1,4 +1,5 @@
-import data from '../../data/data.json' assert { type: 'json' };
+import { dataJSON } from "../../data/data_.js";
+const data = JSON.parse(dataJSON); 
 
 class listHobbies extends HTMLElement {
     constructor() {

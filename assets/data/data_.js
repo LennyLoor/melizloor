@@ -1,4 +1,4 @@
-{
+export var dataJSON = `{
     "home_wallpaper":[
         { 
             "image": "glasses"
@@ -503,5 +503,4 @@
             "enlace":"https://github.com/LennyLoor"
         }
     ]
-}
-
+}`;

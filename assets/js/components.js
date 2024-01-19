@@ -1,4 +1,3 @@
-
 import './components/socialMedia.js'
 import './components/homeWallpaper.js'
 import './components/hobbies.js'

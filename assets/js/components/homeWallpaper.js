@@ -1,4 +1,5 @@
-import data from '../../data/data.json' assert { type: 'json' };
+import { dataJSON } from "../../data/data_.js";
+const data = JSON.parse(dataJSON); 
 
 class wallpaperElements extends HTMLElement {
     constructor() {
@@ -13,3 +14,5 @@ class wallpaperElements extends HTMLElement {
     }
 }
 window.customElements.define('wallpaper-elements', wallpaperElements);
+
+

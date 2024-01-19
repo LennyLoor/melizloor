@@ -4,14 +4,13 @@ import './elements/animateImage.js'
 import './components.js'
 /* ELEMENTS */
 import './animateScroll.js'
+/* import './language.js' */
 
 /* LOADER PAGE */
 $('body').css({ overflow: 'hidden' });
-
-function loadPage() {
+const loadPage = () => {
     $(".loader").fadeOut("slow", () => {
         $('body').css({ overflow: 'auto' });
     });
 }
-
 window.onload = loadPage;
