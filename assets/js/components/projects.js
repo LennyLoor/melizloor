@@ -12,7 +12,7 @@ class listProjects extends HTMLElement {
             return ` 
             <div class="item" 
                 data-categoria="${data_.data_categoria}" >
-                <div class="item-content">
+                <div class="item-content" onclick="">
                     <img class="item-image" width="200" src="../assets/images/projects/${data_.image}" alt="${data_.name_project}" title="${data_.name_project}">
                     <div class="item-data"> 
                         <div class="items title">
@@ -27,9 +27,9 @@ class listProjects extends HTMLElement {
                             </div>
                         </div>
                         <div class="items buttons"> 
-                            <a href="${data_.url_repositorio}" style="display:${data_.btn_repositorio}" target="_blank">Repositorio</a>
-                            <a href="${data_.url_enlace}" style="display:${data_.btn_enlace}" target="_blank">${data_.tipoDeEnlace}</a> 
-                            <a target="_blank" class="expand-image" style="display:${data_.btn_imagen}">Imagen <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                            <a onclick="" href="${data_.url_repositorio}" style="display:${data_.btn_repositorio}" target="_blank">Repositorio</a>
+                            <a onclick="" href="${data_.url_enlace}" style="display:${data_.btn_enlace}" target="_blank">${data_.tipoDeEnlace}</a> 
+                            <a onclick="" target="_blank" class="expand-image" style="display:${data_.btn_imagen}">Imagen <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
                         </div>
                     </div>
                 </div>

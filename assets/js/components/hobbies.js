@@ -11,7 +11,7 @@ class listHobbies extends HTMLElement {
         this.innerHTML = this.hobby.map((data_) =>{
             return ` <li>                         
                         <a class="hb__icon" title="${data_.name}">
-                            <i class="fa-solid fa-${data_.icon} hb__icon--lightblue"></i>
+                            <i class="fa-solid fa-${data_.icon} hb__icon--lightblue" onclick=""></i>
                         </a>                          
                     </li>`;
         }).join('')
