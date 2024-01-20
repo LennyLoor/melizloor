@@ -1,4 +1,4 @@
-import { dataJSON } from "../../data/data_.js";
+import { dataJSON } from "../../data/data.js";
 const data = JSON.parse(dataJSON); 
 
 class wallpaperElements extends HTMLElement {
