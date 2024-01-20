@@ -9,7 +9,7 @@ class listAcademic extends HTMLElement {
     connectedCallback() {
         this.innerHTML = this.academic.map(function (data_) {
             return `<li class="fa_item">
-                        <div class="fa_item__logo logo-${data_.id}"></div>
+                        <div class="fa_item__logo logo-${data_.id}" onclick=""></div>
                         <div class="fa_item__info">
                             <h5 class="info-title">${data_.name}</h5>
                             <h5 class="info-subTitle">${data_.descripcion}</h5>

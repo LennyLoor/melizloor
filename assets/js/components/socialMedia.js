@@ -10,7 +10,7 @@ class listSocialMedia extends HTMLElement {
     connectedCallback() {
         this.innerHTML = this.social_media.map((data_) => {
             return ` <li>
-                        <a class="info__network--${data_.class}" href="${data_.url}" target="_blank">
+                        <a class="info__network--${data_.class}" href="${data_.url}" target="_blank" onclick="">
                             ${data_.name} 
                             <i class="fa fa-solid fa-up-right-from-square"></i>
                         </a>
@@ -30,7 +30,7 @@ class footerSocialMedia extends HTMLElement {
     connectedCallback() {
         this.innerHTML = this.redes_sociales.map((data_) => {
             return `  <li>
-                        <a href="${data_.enlace}" target="_blank"><i
+                        <a href="${data_.enlace}" target="_blank" onclick=""><i
                         class="fa-brands fa-${data_.icono}"></i> ${data_.name}</a>
                     </li>`;
         }).join('')
