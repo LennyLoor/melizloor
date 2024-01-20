@@ -102,7 +102,7 @@
 }
 
 .fa_item:hover .info-line,
-.fa_item:active .info-line {
+.fa_item:hover:active .info-line {
     width: 7rem;
     transition-delay: 0.4s;
 }
@@ -162,39 +162,39 @@
 }
 
 li.fa_item:hover,
-li.fa_item:active {
+li.fa_item:hover:active {
     transition: 1s;
 }
 
 /* HEIGHT CARD */
 li.fa_item:nth-child(1):hover,
-li.fa_item:nth-child(1):active,
+li.fa_item:nth-child(1):hover:active,
 .fa_item__info {
     height: 28rem;
 }
 
 li.fa_item:nth-child(2):hover,
-li.fa_item:nth-child(2):active {
+li.fa_item:nth-child(2):hover:active {
     height: 19.5rem;
 }
 
 li.fa_item:nth-child(3):hover,
-li.fa_item:nth-child(3):active {
+li.fa_item:nth-child(3):hover:active {
     height: 14rem;
 }
 
 li.fa_item:nth-child(4):hover,
-li.fa_item:nth-child(4):active {
+li.fa_item:nth-child(4):hover:active {
     height: 28.5rem;
 }
 
 li.fa_item:nth-child(5):hover,
-li.fa_item:nth-child(5):active {
+li.fa_item:nth-child(5):hover:active {
     height: 24.3rem;
 }
 
 li.fa_item:hover .fa_item__info,
-li.fa_item:active .fa_item__info {
+li.fa_item:hover:active .fa_item__info {
     padding: 1.5rem;
     transform: translateY(-8.5rem);
 }
@@ -205,9 +205,9 @@ li.fa_item:hover .fa_item__info .info-buttons {
     opacity: 1;
 }
 
-li.fa_item:active .fa_item__info .info-line,
-li.fa_item:active .fa_item__info .info-box,
-li.fa_item:active .fa_item__info .info-buttons {
+li.fa_item:hover:active .fa_item__info .info-line,
+li.fa_item:hover:active .fa_item__info .info-box,
+li.fa_item:hover:active .fa_item__info .info-buttons {
     opacity: 1;
 }
 
@@ -321,33 +321,33 @@ li.fa_item:active .fa_item__info .info-buttons {
     }
 
     li.fa_item:nth-child(1):hover,
-    li.fa_item:nth-child(1):active,
+    li.fa_item:nth-child(1):hover:active,
     .fa_item__info {
         height: 22rem;
     }
 
     li.fa_item:nth-child(2):hover,
-    li.fa_item:nth-child(2):active {
+    li.fa_item:nth-child(2):hover:active {
         height: 18.5rem;
     }
 
     li.fa_item:nth-child(3):hover,
-    li.fa_item:nth-child(3):active {
+    li.fa_item:nth-child(3):hover:active {
         height: 13rem;
     }
 
     li.fa_item:nth-child(4):hover,
-    li.fa_item:nth-child(4):active {
+    li.fa_item:nth-child(4):hover:active {
         height: 25rem;
     }
 
     li.fa_item:nth-child(5):hover,
-    li.fa_item:nth-child(5):active {
+    li.fa_item:nth-child(5):hover:active {
         height: 20.2rem;
     }
 
     li.fa_item:hover .fa_item__info,
-    li.fa_item:active .fa_item__info {
+    li.fa_item:hover:active .fa_item__info {
         padding: 1.5rem;
         transform: translateY(-8.5rem);
     }
@@ -372,38 +372,38 @@ li.fa_item:active .fa_item__info .info-buttons {
     }
 
     li.fa_item:hover .fa_item__info,
-    li.fa_item:active .fa_item__info{
+    li.fa_item:hover:active .fa_item__info{
         font-size: .9rem;
     }
 
     li.fa_item:nth-child(1):hover,
-    li.fa_item:nth-child(1):active,
+    li.fa_item:nth-child(1):hover:active,
     .fa_item__info {
         height: 24.5rem;
     }
 
     li.fa_item:nth-child(2):hover,
-    li.fa_item:nth-child(2):active {
+    li.fa_item:nth-child(2):hover:active {
         height: 18.5rem;
     }
 
     li.fa_item:nth-child(3):hover,
-    li.fa_item:nth-child(3):active {
+    li.fa_item:nth-child(3):hover:active {
         height: 13rem;
     }
 
     li.fa_item:nth-child(4):hover,
-    li.fa_item:nth-child(4):active {
+    li.fa_item:nth-child(4):hover:active {
         height: 25rem;
     }
 
     li.fa_item:nth-child(5):hover,
-    li.fa_item:nth-child(5):active {
+    li.fa_item:nth-child(5):hover:active {
         height: 21.2rem;
     }
 
     li.fa_item:hover .fa_item__info,
-    li.fa_item:active .fa_item__info {
+    li.fa_item:hover:active .fa_item__info {
         padding: 1.5rem;
         transform: translateY(-8.5rem);
     }
