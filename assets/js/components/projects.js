@@ -13,7 +13,7 @@ class listProjects extends HTMLElement {
             <div class="item" 
                 data-categoria="${data_.data_categoria}" >
                 <div class="item-content" onclick="">
-                    <img class="item-image" width="200" src="../assets/images/projects/${data_.image}" alt="${data_.name_project}" title="${data_.name_project}">
+                    <img class="item-image" width="200" title="${data_.name_project}" alt="${data_.name_project}" src="../assets/images/projects/${data_.image}" >
                     <div class="item-data"> 
                         <div class="items title">
                             <p>${data_.name_project}</p>
@@ -52,7 +52,7 @@ class overlayImage extends HTMLElement {
             <i class="fas fa-times"></i>
         </button>
         <div class="container-img no-select">
-            <img src="" alt="">
+            <img src="" alt="Imagen-proyecto">
         </div>`; 
     }
 }

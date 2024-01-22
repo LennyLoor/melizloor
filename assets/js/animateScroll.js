@@ -25,7 +25,7 @@ for (var i = 0; i < fa_item.length; i++) {
     new ScrollMagic.Scene({
         triggerElement: fa_item[i],
         offset: 100,
-        triggerHook: .8,
+        triggerHook: .9,
     })
         .setClassToggle(fa_item[i], "visible")
         .addTo(controller);

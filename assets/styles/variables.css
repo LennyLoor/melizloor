@@ -27,17 +27,12 @@
     --width-content: 90%;
 
     --pd-header: .7rem 5rem;
-    --pd-header-link: .3rem 1.2rem;
-    --pd-home: 95px 5rem 1.875rem 5rem;
+    --pd-header-link: .3rem 1.2rem; 
     --pd-footer: .8rem 5rem;
 
-    --pd-sec: 5rem;
-    --pd-sec-sm: 5.5rem 10rem 5rem 10rem;
-    --pd-sec-menu: 7rem 2rem;
-
-    --top-header: 7rem;
-    --pd-section-30: 1.875rem 5rem;
-    --pd-section-50: 6rem 10rem;
+    --pd-section: 0 5rem; 
+    --pd-section-movil: 0 1.5rem; 
+    --pd-section-home-movil: 2rem 0;  
 
     --bg-header: #20242d;
     --bg-sobreMi: #20242d;
@@ -49,6 +44,7 @@
 
     --bg-lightblue-1: #179ddd;
     --bg-lightblue-2: #0067b0;
+    
     --bg-fucsia-1: #e53ec8;
     --bg-fucsia-2: #a32498;
     --bg-fucsia-3: rgb(196, 96, 187);

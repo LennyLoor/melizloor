@@ -14,23 +14,24 @@ textarea {
 
 section {
     overflow: hidden;
+    padding: var(--pd-section);
+}
+
+.section_box {
+    padding: 5rem 0;
+}
+
+.section_box-sm {
+    padding: 2rem 0;
 }
 
 /* -----------------------------------------
                 [CONTENT]
 ------------------------------------------- */
 
+
 .w-full {
     width: 100%;
-}
-
-/* PADDING SECTION */
-.sec__pd--sm {
-    padding: var(--pd-sec-sm);
-}
-
-.sec__pd {
-    padding: var(--pd-sec);
 }
 
 /* TITLE SECTION */
@@ -61,12 +62,12 @@ section {
     line-height: 2rem;
     padding: .5rem;
     transition: 1S;
+    cursor: pointer;
     z-index: 2;
 }
 
 .ml-icon-scrollUp a {
-    background: var(--bg-purple-1);
-    background: var(--bg-gradient-purple);
+    background: var(--bg-purple-1); 
     display: flex;
     width: 100%;
     height: 100%;
@@ -77,6 +78,91 @@ section {
     color: var(--bg-white);
 }
 
+/* TOOLTIP */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    position: absolute;
+    background-color: var(--bg-lightblue-1);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: .2rem .5rem;
+    z-index: 2;
+    top: 120%;
+    left: 50%;
+    margin-left: -68px;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--bg-lightblue-1) transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* TOOLTIP-HEADER */
+.tooltip .tooltiptext-header {
+    visibility: hidden;
+    width: 60px;
+    position: absolute;
+    background-color: var(--bg-lightblue-1);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: .2rem .5rem;
+    z-index: 2;
+    top: 160%;
+    left: 50%;
+    margin-left: -37px;
+}
+
+.tooltip .tooltiptext-header::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--bg-lightblue-1) transparent;
+}
+
+.tooltip:hover .tooltiptext-header {
+    visibility: visible;
+}
+
+/* TOOLTIP-ESPAÑOL */
+.tooltiptext-header.bg__fucsia {
+    background-color: var(--bg-fucsia-1);
+}
+
+.tooltiptext-header.bg__fucsia::after {
+    border-color: transparent transparent var(--bg-fucsia-1) transparent;
+}
+
+/* TOOLTIP-INGLES */
+.tooltiptext-header.bg__lightblue {
+    background-color: var(--bg-lightblue-1);
+}
+
+.tooltiptext-header.bg__lightblue::after {
+    border-color: transparent transparent var(--bg-lightblue-1) transparent;
+}
+
 /* -----------------------------------------
                 [FOOTER]
 ------------------------------------------- */
@@ -84,7 +170,7 @@ section {
     text-align: center;
     color: var(--bg-white);
     padding: var(--pd-footer);
-    background-image: var(--bg-img-footer);
+    background: var(--bg-gradient-skill);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -92,7 +178,6 @@ section {
 
 .ml-footer p {
     margin: 0;
-    font-size: .9rem;
 }
 
 /* -----------------------------
@@ -128,15 +213,15 @@ section {
 }
 
 /* LINE */
-.bg__line--lightblue {
+.bg__lightblue {
     background-color: var(--bg-lightblue-1);
 }
 
-.bg__line--fucsia {
+.bg__fucsia {
     background-color: var(--bg-fucsia-1);
 }
 
-.bg__line--purple {
+.bg__purple {
     background-color: var(--bg-purple-1);
 }
 
@@ -169,7 +254,7 @@ section {
 }
 
 .loader-icon {
-    width: 250px;
+    width: 200px;
     height: 150px;
     background: url('../images/Icon/Icon_loader.gif');
     background-size: contain;
@@ -206,6 +291,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        font-size: .9rem;
+    }
     .ml-footer {
         background-position: center;
         padding: 0.7rem 0;
@@ -218,12 +306,31 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 436px) {
     body {
-        font-size: .8rem;
+        font-size: .9rem;
     }
-    .sec__pd {
-        padding: 5rem 2rem;
-    }
-    .loader-icon{
+
+    .loader-icon {
         width: 150px;
     }
+
+    section {
+        padding: var(--pd-section-movil);
+    }
+
+    .section_box {
+        padding: 2rem 0;
+    }
+    .section_box-sm{
+        padding: 1rem 0;
+    }
+
+    .tooltip .tooltiptext {
+        width: 75px;
+        margin-left: -45px;
+        line-height: 1rem;
+    }
+    p {
+        line-height: 1.5rem;
+    }
+
 }

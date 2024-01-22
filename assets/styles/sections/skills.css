@@ -3,10 +3,6 @@
   color: var(--bg-white);
 }
 
-.sk_box {
-  padding: 6rem 5rem 3rem 5rem !important;
-}
-
 .bg-Skills {
   background: var(--bg-gradient-skill);
   color: white;
@@ -32,7 +28,7 @@
 
 .sk_slider li {
   height: auto;
-  width: 8rem;
+  min-width: 8rem;
   display: flex;
   align-items: center;
   border-radius: 1rem;
@@ -110,12 +106,12 @@
   width: 50px;
 }
 
-.sk__text {
-  font-size: .9rem;
+.sk__text { 
   text-align: center;
   padding: .5rem 1rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  text-wrap: nowrap;
 }
 
 
@@ -124,16 +120,13 @@
 ------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
-  .sk_box {
-    padding: 2rem;
-    padding-top: 7rem !important;
+  .bg-Skills {
+    padding: 0;
   }
-
 }
 
 @media only screen and (max-width: 479px) {
-  .sk_box {
-    padding: 1rem !important;
-    padding-top: 5rem !important;
+  .bg-Skills {
+    padding: 0;
   }
 }

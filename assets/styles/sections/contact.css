@@ -73,15 +73,13 @@
 }
 
 .cont_box__rs ul li a:hover {
-    color: var(--bg-purple-2);
+    color: var(--bg-lightblue-1);
 }
 
 .cont_box__rs ul li i {
     width: 1rem;
-    font-size: 1rem;
-    border: 1px solid var(--bg-purple-2);
-    background: var(--bg-purple-2);
-    color: white;
+    font-size: 1rem; 
+    color: var(--bg-lightblue-1);
     padding: .5rem;
     margin-right: .5rem;
     border-radius: .2rem;
@@ -148,8 +146,7 @@ textarea {
 }
 
 .msm-error {
-    display: none;
-    font-size: .8rem;
+    display: none; 
     background-color: var(--bg-purple-4);
     color: var(--bg-purple-1);
     border: 1px solid var(--bg-purple-4);
@@ -286,5 +283,14 @@ textarea {
     .cont_box__rs ul footer-socialmedia {
         display: flex;
         flex-direction: column;
+    }
+    .formc__btn{
+        width: 100%;
+    }
+    .form__buttons span,.form__buttons .btn_flex{
+        width: 100%;
+        text-align: center;    
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -11,8 +11,8 @@ class listSocialMedia extends HTMLElement {
         this.innerHTML = this.social_media.map((data_) => {
             return ` <li>
                         <a class="info__network--${data_.class}" href="${data_.url}" target="_blank" onclick="">
-                            ${data_.name} 
-                            <i class="fa fa-solid fa-up-right-from-square"></i>
+                            <span>${data_.name} <i class="fa fa-solid fa-up-right-from-square"></i></span>
+                            <i class="icon ${data_.icon}"></i> 
                         </a>
                     </li>`;
         }).join('')

@@ -12,7 +12,7 @@ class listSkill extends HTMLElement {
             return `<li>
                         <div class="sk__item">
                             <div class="sk__icon">   
-                                <img class="no-select" width="60" src="assets/images/Icon/Icon_${data_.nameImage}.png">
+                                <img class="no-select" width="60" alt="Icono-${data_.nameImage}" src="assets/images/Icon/Icon_${data_.nameImage}.png">
                             </div>
                             <div class="sk__text">
                                 <span>${data_.name}</span>

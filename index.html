@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +24,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/b229e29af4.js" crossorigin="anonymous"></script>
     <!-- jquery -->
-    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script> 
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <!-- Stellar -->
     <script src="assets/js/scrollMagic/ScrollMagic.min.js"></script>
     <script src="assets/js/scrollMagic/plugins/animation.gsap.min.js"></script>
-    <script src="assets/js/scrollMagic/plugins/debug.addIndicators.min.js"></script>     
+    <script src="assets/js/scrollMagic/plugins/debug.addIndicators.min.js"></script>
 </head>
 
 <body>
@@ -38,78 +39,93 @@
         <!-- HEADER -->
         <header id="header-scroll" class="ml_header no-select">
             <div class="ml_header__content">
-                <div class="header__img">
-                    <div class="header__logo">
-                        <a href="#home">
-                            <img width="40" src="assets/images/Ico.png">
-                        </a>
-                    </div>
-                    <div class="header__icon">
+                <div class="header__logo">
+                    <a href="#home">
+                        <img width="40" alt="Logo" src="assets/images/Ico.png">
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <div class="menu__btn">
                         <a><i class="fa-solid fa-bars"></i> </a>
                     </div>
-                </div>
-                <nav class="header__menu">
-                    <ul class="menu__list">
-                        <li onclick="" class="menu__list__item"><a class="item_menu" id="item1" href="#about-me">Sobre mi</a></li>
-                        <li onclick=""class="menu__list__item"><a class="item_menu" id="item2" href="#skills">Skills</a></li>
-                        <li onclick="" class="menu__list__item"><a class="item_menu" id="item3" href="#formacion">Formación</a></li>
-                        <li onclick="" class="menu__list__item"><a class="item_menu" id="item4" href="#proyectos">Proyectos</a></li>
-                        <li onclick="" class="menu__list__item item-contacto"><a class="item_menu" id="item5" href="#contacto">Contacto</a></li>
-                    </ul>
-                    <!-- <div class="ml_language" title="cambiar idioma"> 
+                    <nav>
+                        <ul class="menu__list">
+                            <li onclick="" class="menu__list__item">
+                                <a class="item_menu" id="item1" href="#sobre-mi">Sobre mi</a>
+                            </li>
+                            <li onclick="" class="menu__list__item">
+                                <a class="item_menu" id="item2" href="#skills">Skills</a>
+                            </li>
+                            <li onclick="" class="menu__list__item">
+                                <a class="item_menu" id="item3" href="#formacion">Formación</a>
+                            </li>
+                            <li onclick="" class="menu__list__item">
+                                <a class="item_menu" id="item4" href="#proyectos">Proyectos</a>
+                            </li>
+                            <li onclick="" class="menu__list__item item-contacto">
+                                <a class="item_menu" id="item5" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- <div class="ml_language tooltip" onclick="">
                         <input type="checkbox" id="lang">
                         <label class="lang" for="lang">
                             <span class="en">EN</span>
                             <span class="es">ES</span>
                         </label>
+                        <span class="tooltiptext-header" data-tooltip-lang> English</span>
                     </div> -->
-                </nav>
+                </div>
             </div>
         </header>
         <!-- CONTENT -->
         <main>
-
-            <section id="home" class="sec-home wall-home">
+            <section id="home" class="wall-home center">
                 <div class="home_box">
                     <div class="home_box__info">
                         <h1>
-                            <b id="home_txt_1">Hola! </b>
+                            <b data-hm-titulo class="hm_titulo">
+                                Hola,
+                            </b>
                         </h1>
-                        <p>
-                            Soy Melissa, una diseñadora gráfica y productora audiovisual, apasionada por la creatividad
-                            y la comunicación visual. Mi objetivo es combinar mis conocimientos en diseño y producción
-                            audiovisual con el mundo del desarrollo web para ofrecer soluciones multimedia innovadoras y
-                            atractivas.
+                        <h2> Soy Lenny Melissa </h2>
+                        <p data-hm-contenido>
+                            Diseñadora gráfica, de interfaces y productora audiovisual, apasionada por la creatividad
+                            y la comunicación visual.
                         </p>
+                        <div class="btn-about-me">
+                            <a href="#sobre-mi" onclick="">Conóceme más <i class="fa-solid fa-angles-down"></i></a>
+                        </div>
                         <ul class="no-select">
                             <list-socialmedia class="info__network"></list-socialmedia>
                         </ul>
                     </div>
                     <div class="home_image no-select">
-                        <img id="image-gif" src="assets/images/wallpaper/wallpaper-foto-intro.gif">
+                        <img id="image-gif" alt="Foto sobre mi" src="assets/images/wallpaper/wallpaper-foto-intro.gif">
                     </div>
                 </div>
             </section>
 
-            <section id="about-me" class="sec-about-me wall-sm paused">
+            <section id="sobre-mi" class="sec-about-me wall-sm paused">
                 <div class="sm__images">
                     <wallpaper-elements></wallpaper-elements>
                 </div>
-                <div class="sm_box sec__pd--sm center">
+                <div class="section_box sm_box center">
                     <div class="sm__box__content ">
-                        <h3 class="content_titlle">Sobre mi</h3>
-                        <div id="sm_line" class="content_line bg__line--fucsia"></div>
+                        <h3 class="content_titlle" data-sm-titulo>Sobre mi</h3>
+                        <div id="sm_line" class="content_line bg__fucsia"></div>
                         <div class="sm__content">
-                            <p>
                             <h3 class="title">Lenny Melissa</h3>
-                            <small>Lcda. Diseño y Producción Audiovisual</small><br><br>
-                            Soy una profesional creativa con una sólida formación y experiencia en diseño web, gráfico y
-                            producción audiovisual. Mi enfoque versátil me permite abordar proyectos desde diversas
-                            perspectivas, ofreciendo soluciones integrales y atractivas.
-                            Sin embargo, mi búsqueda constante de conocimiento me ha llevado a adentrarme en el
-                            emocionante campo del Desarrollo web Front-end.
+                            <small data-sm-subtitulo>Lcda. Diseño y Producción Audiovisual</small><br>
+                            <p data-sm-contenido>
+                                Soy una profesional creativa con una sólida formación y experiencia en diseño web,
+                                gráfico y
+                                producción audiovisual. Mi enfoque versátil me permite abordar proyectos desde diversas
+                                perspectivas, ofreciendo soluciones integrales y atractivas.
+                                Sin embargo, mi búsqueda constante de conocimiento me ha llevado a adentrarme en el
+                                emocionante campo del Desarrollo web Front-end.
                             </p>
-                            <p>
+                            <p data-sm-objetivo>
                                 Mi objetivo es seguir evolucionando en este camino de aprendizaje, aprovechando mis
                                 habilidades creativas para diseñar experiencias impactantes y efectivas que deleiten
                                 a los usuarios.
@@ -117,17 +133,17 @@
                             <div class="hb_box">
                                 <div class="hb_box__header">Hobbies</div>
                                 <ul class="hb_box__list">
-                                    <list-hobbies class="hb__list"></list-hobbies>
+                                    <list-hobbies class="hb__list" data-hobbies></list-hobbies>
                                 </ul>
                             </div>
-                            <img class="no-select" width="100" src="assets/images/firma.png">
+                            <img class="no-select" width="100" alt="Firma" src="assets/images/firma.png">
                         </div>
                     </div>
                 </div>
             </section>
 
             <section id="skills" class="sec-Skills bg-Skills">
-                <div class="sk_box sec__pd">
+                <div class="section_box-sm sk_box">
                     <div class="sk_box__content">
                         <ul class="content_list">
                             <list-skill class="sk_slider"></list-skill>
@@ -138,10 +154,10 @@
             </section>
 
             <section id="formacion" class="sec-academic bg-gray-3">
-                <div class="fa_box sec__pd">
+                <div class="section_box fa_box">
                     <div class="fa_box__content">
                         <h3 class="content_titlle">Formación académica</h3>
-                        <div id="fa_line" class="content_line bg__line--purple"></div>
+                        <div id="fa_line" class="content_line bg__purple"></div>
                         <div class="fa_content">
                             <ul class="fa_list">
                                 <list-academic></list-academic>
@@ -152,10 +168,10 @@
             </section>
 
             <section id="proyectos" class="sec-experiencia">
-                <div class="ep_box sec__pd">
+                <div class="section_box ep_box">
                     <div class="ep_box__content">
                         <h3 class="content_titlle">Experiencia profesional</h3>
-                        <div id="exp_line" class="content_line bg__line--lightblue"></div>
+                        <div id="exp_line" class="content_line bg__lightblue"></div>
                         <div class="content_list">
                             <div class="categories" id="categories">
                                 <a href="#">Branding</a>
@@ -174,26 +190,27 @@
 
             <section id="contacto" class="sec-tj img__tj" data-stellar-background-ratio="0.5">
                 <div class="overlay-gray"></div>
-                <div id="tj_box" class="tj_box sec__pd">
+                <div id="tj_box" class="section_box tj_box">
                     <div class="tj_box__content">
                         <h3 class="content_titlle">Trabajemos juntos</h3>
-                        <div id="tj_line" class="content_line bg__line--lightblue"></div>
+                        <div id="tj_line" class="content_line bg__lightblue"></div>
                         <div class="tj_content">
                             <p>
                                 ¿Te gustaría que colaboremos? <br>
                                 Solo debes hacer clic en el enlace que aparece a continuación y comencemos a darle vida
                                 a tus proyectos.
                             </p>
-                            <a onclick="" href="mailto:melizloor.info@gmail.com" class="no-select">CUÉNTAME SOBRE TU PROYECTO</a>
+                            <a onclick="" href="mailto:melizloor.info@gmail.com" class="no-select">CUÉNTAME SOBRE TU
+                                PROYECTO</a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="sec-contacto">
-                <div class="cont_box sec__pd">
+                <div class="section_box cont_box">
                     <div class="cont_box__info">
-                        <img class="no-select" width="60" src="./assets/images/Ico.png">
+                        <img class="no-select" width="60" alt="Logo" src="./assets/images/Ico.png">
                         <b>MELIZLOOR</b>
                         <hr>
                         <p>
@@ -282,8 +299,9 @@
             </section>
 
             <div class="ml-icon-scrollUp">
-                <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
+                <a><i class="fa-solid fa-angles-up"></i></a>
             </div>
+
         </main>
     </div>
     <!-- Footer -->
@@ -297,7 +315,7 @@
     <script type="module" src="assets/js/filter-projects.js"></script>
     <script type="text/javascript" src="assets/js/header.js"></script>
     <script type="module" src="assets/api-form/send_correo.js"></script>
-    <script type="module" src="assets/js/form.js"></script> 
+    <script type="module" src="assets/js/form.js"></script>
 </body>
 
 </html>

@@ -21,21 +21,19 @@
     display: flex;
 }
 
-.header__icon {
+.menu__btn {
     display: none;
-    position: absolute;
-    right: 1rem;
-    top: 0;
+    position: relative;
     height: 100%;
 }
 
-.header__icon a {
+.menu__btn a {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.header__icon i {
+.menu__btn i {
     display: block;
     background: var(--bg-purple-1);
     color: var(--bg-white);
@@ -46,7 +44,7 @@
 .header__menu {
     display: flex;
     align-items: center;
-    position: relative;
+    gap: 1rem;
 }
 
 .menu__list {
@@ -69,8 +67,7 @@
 }
 
 .item-contacto a {
-    background: var(--bg-purple-1);
-    background: var(--bg-gradient-purple);
+    background: var(--bg-purple-1); 
     color: white;
 }
 
@@ -100,8 +97,7 @@
 }
 
 .selected-5 {
-    transition: .8s;
-    color: var(--bg-purple-2) !important;
+    transition: .8s; 
     color: white !important;
 }
 
@@ -121,11 +117,6 @@
     60% {
         background-color: #def;
     }
-}
-
-
-.ml_language {
-    margin-left: 1rem;
 }
 
 .ml_language input {
@@ -196,32 +187,33 @@
 @media only screen and (max-width: 768px) {
 
     .ml_header__content {
-        padding: 0;
-        flex-direction: column;
-    }
-
-    .ml_header {
-        background: transparent !important;
+        padding: 1rem;
+        display: flex;
     }
 
     .header__img {
         background-color: var(--bg-header);
         z-index: 2;
         padding: .5rem;
+        display: flex;
     }
 
     .header__logo img {
         width: 75px;
     }
 
-    .header__menu {
+    .header__menu nav {
         display: none;
+        position: absolute;
+        width: 100%;
+        top: 65px;
+        left: 0;
         box-shadow: 1px 5px 15px -6px rgba(0, 0, 0, 0.39);
         -webkit-box-shadow: 1px 5px 15px -6px rgba(0, 0, 0, 0.39);
         -moz-box-shadow: 1px 5px 15px -6px rgba(0, 0, 0, 0.39);
     }
 
-    .header__icon {
+    .menu__btn {
         display: block;
     }
 
@@ -248,9 +240,24 @@
         background: transparent !important;
     }
 
-    .selected-6 {
+    .ml_language .lang {
+        width: 2.1rem;
+        height: 2.1rem;
+        border-radius: 0.3rem;
+    }
+
+    .tooltip .tooltiptext-header {
+        top: 135%;
+        left: 0;
+    }
+
+    .tooltip .tooltiptext-header::after {
+        left: 70%;
+    }
+ 
+    .selected-5 {
         transition: .8s;
-        color: var(--bg-purple-1) !important;
+        color: var(--bg-purple-2) !important; 
     }
 
 }

@@ -11,10 +11,6 @@
     color: var(--bg-white);
 }
 
-.fa_box {
-    backdrop-filter: blur(10px);
-}
-
 .fa_box__content {
     display: flex;
     flex-direction: column;
@@ -40,7 +36,7 @@
     justify-content: center;
     width: 100%;
     padding: 0;
-    gap: 1.5rem; 
+    gap: 1.5rem;
 }
 
 .fa_item {
@@ -290,20 +286,12 @@ li.fa_item:hover .fa_item__info .info-buttons {
 
 @media only screen and (max-width: 768px) {
 
-    .sec-academic {
-        padding: var(--pd-sec-menu);
-    }
-
     .fa_item {
         width: 90%;
     }
 
     .fa_item__logo {
         width: 30%;
-    }
-
-    .fa_box {
-        padding: 0;
     }
 
     li.fa_item:nth-child(1):hover,
@@ -335,9 +323,6 @@ li.fa_item:hover .fa_item__info .info-buttons {
 }
 
 @media only screen and (max-width: 479px) {
-    .sec-academic {
-        padding: 5rem 2rem;
-    }
 
     .fa_item {
         width: 100%;
@@ -345,10 +330,6 @@ li.fa_item:hover .fa_item__info .info-buttons {
 
     .fa_item__logo {
         width: 50%;
-    }
-
-    .fa_box {
-        padding: 0;
     }
 
     li.fa_item:hover .fa_item__info {

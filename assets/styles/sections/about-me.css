@@ -19,6 +19,7 @@
 }
 
 .sm_box {
+    width: 100%;
     z-index: 1;
 }
 
@@ -54,8 +55,7 @@
 
 .hb_box ul li {
     list-style-type: none;
-    display: inline-block;
-    margin: 0 0 0 -10px;
+    display: inline-block; 
 }
 
 .hb_box ul li .hb__icon {
@@ -97,8 +97,8 @@
     transition: all 0.2s ease-in-out;
 }
 
-.hb_box ul li .hb__icon {
-    font-size: 1.5rem;
+.hb_box ul li .hb__icon i{
+    font-size: 1rem;
 }
 
 .hb_box ul li i:hover {
@@ -131,7 +131,7 @@
     width: 250px;
     height: 150px;
     top: 25px;
-    left: 15px;
+    left: -25px;
 }
 
 .img-cup {
@@ -171,6 +171,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    left: 0;
 }
 
 .sm__images img {
@@ -224,7 +225,6 @@
 @media only screen and (max-width: 768px) {
 
     .sec-about-me {
-        padding: var(--pd-sec-menu);
         flex-direction: column;
     }
 
@@ -237,10 +237,6 @@
         text-align: center;
     }
 
-    .sm_box {
-        padding: 0;
-    }
-
     .sm__images {
         display: none;
     }
@@ -249,5 +245,7 @@
         background-image: var(--bg-img-about-me-movil);
         background-position: 98% 0;
     }
-
+    .hb_box ul .hb__list{
+        gap: .5rem;
+    }
 }

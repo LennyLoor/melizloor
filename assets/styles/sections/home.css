@@ -17,10 +17,10 @@
 }
 
 .home_box {
-    padding: var(--pd-home);
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 52px;
 }
 
 .home_box__info {
@@ -30,23 +30,53 @@
 
 .home_box__info h1 {
     color: var(--bg-white);
-    font-size: 2rem;
     font-weight: bolder;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
 }
 
 .home_box__info h1 b {
     color: var(--bg-purple-1);
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: 'Pacifico', cursive;
 }
 
+.home_box__info h2 {
+    color: var(--bg-white);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.home_box__info .btn-about-me a {
+    background: transparent;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 15rem;
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.home_box__info .btn-about-me a i {
+    margin-left: .5rem;
+}
+
+.home_box__info .btn-about-me a:hover {
+    background-color: var(--bg-purple-1);
+    border: 1px solid var(--bg-purple-1);
+    transition: .5s;
+}
+
+/*  */
 .home_box__info p {
     color: var(--bg-white);
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    line-height: 2rem;
+    margin: 1.5rem 0;
     text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
 }
 
 .home_image {
@@ -62,15 +92,15 @@
 .home_box__info ul {
     padding: 0;
     margin: 0;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .info__network {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
     text-decoration: none;
     padding: 0;
+    gap: .5rem;
 }
 
 .info__network li {
@@ -79,13 +109,53 @@
 }
 
 .info__network li a {
+    min-width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 10px;
     text-decoration: none;
-    padding: .5rem 1rem;
-    border-radius: .5rem;
+    transition: .3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.info__network li a i {
+.info__network li a span {
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    transition: .3s ease;
     font-size: .8rem;
+}
+
+.info__network li a span i {
+    margin-left: .3rem;
+}
+
+.info__network li a .icon {
+    transition: .4s ease;
+    line-height: 32px;
+}
+
+.info__network li a:hover {
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: #fff;
+    min-width: 120px;
+}
+
+.info__network li a:hover span {
+    top: 50%;
+    opacity: 1;
+    color: #fff;
+}
+
+.info__network li a:hover .icon {
+    line-height: 120px;
+    opacity: 0;
 }
 
 /* Github */
@@ -94,22 +164,10 @@
     border: 1px solid var(--bg-Github);
 }
 
-.info__network--Github:hover {
-    transition: .8s;
-    background-color: var(--bg-Github);
-    color: var(--bg-white);
-}
-
 /* Linkedin */
 .info__network--Linkedin {
     color: var(--bg-Linkedin);
     border: 1px solid var(--bg-Linkedin);
-}
-
-.info__network--Linkedin:hover {
-    transition: .8s;
-    background-color: var(--bg-Linkedin);
-    color: var(--bg-white);
 }
 
 /* Behance */
@@ -118,22 +176,10 @@
     border: 1px solid var(--bg-Behance);
 }
 
-.info__network--Behance:hover {
-    transition: .8s;
-    background-color: var(--bg-Behance);
-    color: var(--bg-white);
-}
-
 /* CV */
 .info__network--cv {
     color: var(--bg-cv);
     border: 1px solid var(--bg-cv);
-}
-
-.info__network--cv:hover {
-    transition: .8s;
-    background-color: var(--bg-cv);
-    color: var(--bg-white);
 }
 
 /* ------------------------------------------
@@ -173,7 +219,7 @@
     }
 
     .home_box {
-        padding: 5rem 3rem 4rem 3rem;
+        padding: var(--pd-section-home-movil);
         flex-direction: column;
     }
 
@@ -185,6 +231,26 @@
     .home_box__info h1 {
         font-size: 1.7rem;
         text-align: center;
+    }
+
+    .home_box__info h2 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .home_box__info p {
+        font-size: .9rem;
+        line-height: 1.3rem;
+        text-align: center;
+    }
+
+    .btn-about-me {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-about-me a {
+        width: 50%;
     }
 
     .home__image {
@@ -199,13 +265,14 @@
     }
 
     .info__network {
-        flex-wrap: wrap;
         gap: 1rem;
+        align-items: center;
+        justify-content: center;
     }
 
     .info__network li {
         display: flex;
-        width: calc((100% - 1rem)/2);
+        width: auto;
     }
 
     .info__network li a {
