@@ -1,54 +1,58 @@
 (() => {
-    const form = document.formContacto;
-    const formBtn = document.querySelector("#formc_btn");
-    const formBtnConfirm = document.querySelector(".btn-confirm-msm");
-    const formBtnLoad = document.querySelector(".btn-load-msm");
-    const formBtnError = document.querySelector(".btn-error-msm");
-    const inputElements = document.querySelectorAll('[data-tipo]');
+    const elements = [{
+        form: document.formContacto,
+        btn: document.querySelector("#formc_btn"),
+        btn_confirm: document.querySelector(".btn-confirm-msm"),
+        btn_load: document.querySelector(".btn-load-msm"),
+        btn_error: document.querySelector(".btn-error-msm"),
+        inputs: document.querySelectorAll('[data-tipo]')
+    }]; 
 
-    async function senEmail(event) {
-
-        event.preventDefault();
-
-        var data = new FormData(event.target);
-        //INPUTS - MENSAJE CARGANDO
-        inputElements.forEach(inputElement => {
-            inputElement.disabled = true;
-        });
-        formBtn.style.display = 'none';
-        formBtnLoad.style.display = 'block';
-
-        //RESPUESTA
-        fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-
-            if (response.ok) {
-                form.reset();
-                inputElements.forEach(inputElement => {
-                    inputElement.disabled = false;
-                });
-                formBtnLoad.style.display = 'none';
-                formBtnConfirm.style.display = 'block';
-                setTimeout(() => {
-                    formBtnConfirm.style.display = 'none';
-                    formBtn.style.display = 'block';
-                }, 2500);
-            } else {
-                formBtnError.style.display = 'block';
-                formBtnLoad.style.display = 'none';
-                setTimeout(() => {
-                    formBtnError.style.display = 'none';
-                    formBtn.style.display = 'block';
-                }, 2500);
-            }
-
-        })
-    }
-
-    form.addEventListener("submit", senEmail);
+    elements.forEach((element) => {
+        async function senEmail(event) {
+    
+            event.preventDefault();
+    
+            var data = new FormData(event.target);
+            //INPUTS - MENSAJE CARGANDO
+            element.inputs.forEach(input => {
+                input.disabled = true;
+            });
+            element.btn.style.display = 'none';
+            element.btn_load.style.display = 'block';
+    
+            //RESPUESTA
+            fetch(event.target.action, {
+                method: element.form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+    
+                if (response.ok) {
+                    element.form.reset();
+                    element.inputs.forEach(input => {
+                        input.disabled = false;
+                    });
+                    element.btn_load.style.display = 'none';
+                    element.btn_confirm.style.display = 'block';
+                    setTimeout(() => {
+                        element.btn_confirm.style.display = 'none';
+                        element.btn.style.display = 'block';
+                    }, 2500);
+                } else {
+                    element.btn_error.style.display = 'block';
+                    element.btn_load.style.display = 'none';
+                    setTimeout(() => {
+                        element.btn_error.style.display = 'none';
+                        element.btn.style.display = 'block';
+                    }, 2500);
+                }
+    
+            })
+        }    
+        element.form.addEventListener("submit", senEmail);   
+    
+    })
 })();

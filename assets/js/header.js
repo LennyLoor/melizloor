@@ -1,6 +1,7 @@
 (() => {
 
     const elements = [{
+        logo: document.querySelector('[data-logo]'),
         header: document.getElementById('header-scroll'),
         mainBox: document.querySelector('.ml-icon-scrollUp'),
         section: document.querySelectorAll("section"),
@@ -50,6 +51,11 @@
                 scrollTop: 0,
             }, 500);
         });
+        element.logo.addEventListener('click', (e) => {
+            $('html, body').animate({
+                scrollTop: 0,
+            }, 500);
+        })
 
         /* MENU ACTIVE SCROLL*/
         element.menu.forEach((link, i) => {
@@ -100,8 +106,9 @@
     
         /* BUTTON | ABOUT-ME  */
         element.btn_about_me.addEventListener('click', (e) => {
+            const targetSection = document.getElementById('sobre-mi');
             $('html, body').animate({
-                scrollTop: 670,
+                scrollTop: targetSection.offsetTop + (-51),
             }, 500);
         })
 
@@ -114,6 +121,7 @@
                 element.content_menu.classList.add('fadeInDown');
             }
         });
+
     })
 
 })();
