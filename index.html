@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>MELIZLOOR</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -40,7 +41,7 @@
         <header id="header-scroll" class="ml_header no-select">
             <div class="ml_header__content">
                 <div class="header__logo">
-                    <a href="#home" data-logo>
+                    <a data-logo>
                         <img width="40" alt="Logo" src="assets/images/Ico.png">
                     </a>
                 </div>
@@ -49,32 +50,24 @@
                         <a><i class="fa-solid fa-bars"></i> </a>
                     </div>
                     <nav>
-                        <ul class="menu__list">
+                        <ul class="menu__list" data-menu>
                             <li onclick="" class="menu__list__item">
-                                <a class="item_menu" id="item1" href="#sobre-mi">Sobre mi</a>
+                                <a class="item_menu" data="item1" href="#sobre-mi">Sobre mi</a>
                             </li>
                             <li onclick="" class="menu__list__item">
-                                <a class="item_menu" id="item2" href="#skills">Skills</a>
+                                <a class="item_menu" data="item2" href="#skills">Skills</a>
                             </li>
                             <li onclick="" class="menu__list__item">
-                                <a class="item_menu" id="item3" href="#formacion">Formación</a>
+                                <a class="item_menu" data="item3" href="#formacion">Formación</a>
                             </li>
                             <li onclick="" class="menu__list__item">
-                                <a class="item_menu" id="item4" href="#proyectos">Proyectos</a>
+                                <a class="item_menu" data="item4" href="#proyectos">Proyectos</a>
                             </li>
                             <li onclick="" class="menu__list__item item-contacto">
-                                <a class="item_menu" id="item5" href="#contacto">Contacto</a>
+                                <a class="item_menu" data="item5" href="#contacto">Contacto</a>
                             </li>
                         </ul>
-                    </nav>
-                    <!-- <div class="ml_language tooltip" onclick="">
-                        <input type="checkbox" id="lang">
-                        <label class="lang" for="lang">
-                            <span class="en">EN</span>
-                            <span class="es">ES</span>
-                        </label>
-                        <span class="tooltiptext-header" data-tooltip-lang> English</span>
-                    </div> -->
+                    </nav> 
                 </div>
             </div>
         </header>
@@ -88,13 +81,16 @@
                                 Hola,
                             </b>
                         </h1>
-                        <h2> Soy Lenny Melissa </h2>
+                        <h2 data-hm-subtitulo> Soy Lenny Melissa </h2>
                         <p data-hm-contenido>
                             Diseñadora gráfica, de interfaces y productora audiovisual, apasionada por la creatividad
                             y la comunicación visual.
                         </p>
-                        <div class="btn-about-me">
-                            <a href="#sobre-mi" onclick="">Conóceme más <i class="fa-solid fa-angles-down"></i></a>
+                        <div class="btn-about-me" data-hm-button>
+                            <a href="#sobre-mi" onclick="">
+                                <span>Conóceme más </span>
+                                <i class="fa-solid fa-angles-down"></i>
+                            </a>
                         </div>
                         <ul class="no-select">
                             <list-socialmedia class="info__network"></list-socialmedia>
@@ -156,7 +152,7 @@
             <section id="formacion" class="sec-academic bg-gray-3">
                 <div class="section_box fa_box">
                     <div class="fa_box__content">
-                        <h3 class="content_titlle">Formación académica</h3>
+                        <h3 class="content_titlle" data-fa-titulo>Formación académica</h3>
                         <div id="fa_line" class="content_line bg__purple"></div>
                         <div class="fa_content">
                             <ul class="fa_list">

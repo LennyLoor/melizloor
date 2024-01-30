@@ -1,8 +1,7 @@
 /* COMPONENTS */
 import './components.js'
 /* ELEMENTS */
-import './animateScroll.js'
-/* import './language.js' */
+import './animateScroll.js' 
 
 /* LOADER PAGE */
 $('body').css({ overflow: 'hidden' });

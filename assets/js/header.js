@@ -8,7 +8,7 @@
         menu: document.querySelectorAll(".menu__list > li > a"),
         btn_menu_movil: document.querySelector('.menu__btn a'),
         content_menu: document.querySelector('.header__menu > nav'),
-        btn_about_me: document.querySelector('.btn-about-me'),
+        btn_about_me: document.querySelector('.btn-about-me > a'),
     }];
 
     elements.forEach((element) => {
@@ -60,14 +60,14 @@
         /* MENU ACTIVE SCROLL*/
         element.menu.forEach((link, i) => {
             link.addEventListener('click', (e) => {
-                e.preventDefault();
+                e.preventDefault(); 
                 element.menu.forEach((navLink) => {
                     navLink.setAttribute('class', '');
-                });
-                const targetId = link.getAttribute('href').substring(1);
+                }); 
+                const targetId = link.getAttribute('href').substring(1); 
                 const targetSection = document.getElementById(targetId);
-                link.setAttribute('class', 'selected-' + (i + 1));
-
+                link.setAttribute('class', 'selected-' + (i + 1)); 
+                
                 $('html, body').animate({
                     scrollTop: targetSection.offsetTop + (-51),
                 }, 500);

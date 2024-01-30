@@ -12,7 +12,7 @@ class listAcademic extends HTMLElement {
                         <div class="fa_item__logo logo-${data_.id}" onclick=""></div>
                         <div class="fa_item__info">
                             <h5 class="info-title">${data_.name}</h5>
-                            <h5 class="info-subTitle">${data_.descripcion}</h5>
+                            <h5 class="info-subTitle" data-fa-subtitulo>${data_.descripcion}</h5>
                             <hr class="info-line bg-${data_.id}""> 
                             <div class="info-box">
                                 ${data_.info}                                   
