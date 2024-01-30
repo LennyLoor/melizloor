@@ -26,7 +26,8 @@
     --width-content: 90%;
 
     --pd-header: .7rem 5rem;
-    --pd-header-link: .3rem 1.2rem; 
+    --pd-header-link-btn: .3rem 1rem; 
+    --pd-header-link: .3rem 0; 
     --pd-footer: .8rem 5rem;
 
     --pd-section: 0 5rem; 

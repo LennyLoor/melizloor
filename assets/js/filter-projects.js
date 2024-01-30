@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
 			evento.preventDefault();
 			enlaces.forEach((enlace) => enlace.classList.remove('active'));
 			evento.target.classList.add('active');
-			const categoria = evento.target.innerHTML;
+			const categoria = evento.target.innerHTML; 
 			categoria === 'todas' ? list.filter('[data-categoria]') : list.filter(`[data-categoria="${categoria}"]`);
 		});
 	});

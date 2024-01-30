@@ -238,7 +238,7 @@ export var dataJSON = `{
         },
         {
             "id": "1",
-            "data_categoria": "Aplicaciones mobiles", 
+            "data_categoria": "Aplicaciones móviles", 
             "image": "app_egobx.png", 
             "herramientas": "<img class='no-select' title='Adobe Illustrator' alt='Adobe Illustrator' src='assets/images/Icon/Icon_adobe_ai.png'><img class='no-select' title='Figma' alt='Figma' src='assets/images/Icon/Icon_figma.png'>",
             "name_project": "App eGobX",

@@ -52,6 +52,7 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
+    gap: 1.5rem;
 }
 
 .menu__list__item {
@@ -69,6 +70,7 @@
 .item-contacto a {
     background: var(--bg-purple-1); 
     color: white;
+    padding: var(--pd-header-link-btn);
 }
 
 .item-contacto a:hover {
