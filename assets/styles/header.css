@@ -189,7 +189,7 @@
 @media only screen and (max-width: 768px) {
 
     .ml_header__content {
-        padding: 1rem;
+        padding: .6rem 1rem;
         display: flex;
     }
 
@@ -208,7 +208,7 @@
         display: none;
         position: absolute;
         width: 100%;
-        top: 65px;
+        top: 53px;
         left: 0;
         box-shadow: 1px 5px 15px -6px rgba(0, 0, 0, 0.39);
         -webkit-box-shadow: 1px 5px 15px -6px rgba(0, 0, 0, 0.39);
@@ -224,6 +224,7 @@
         margin: 0;
         flex-direction: column;
         background-color: var(--bg-white);
+        gap: 0;
     }
 
     .menu__list__item {

@@ -76,7 +76,7 @@
                 if (x.matches) {
                     element.content_menu.style.display = "none";
                     $('html, body').animate({
-                        scrollTop: targetSection.offsetTop + (-65),
+                        scrollTop: targetSection.offsetTop + (-52),
                     }, 500);
                 } 
             });
