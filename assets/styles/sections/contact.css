@@ -155,6 +155,7 @@ textarea {
     padding: 0.2rem 0.5rem;
     border-bottom-left-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
+    font-size: .7rem;
 }
 
 .form__buttons {
