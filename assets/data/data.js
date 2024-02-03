@@ -145,7 +145,7 @@ export var dataJSON = `{
             "urlBtn2": "https://www.linkedin.com/in/lennyloor/details/certifications/",
             "visibility_btn1": "block",
             "visibility_btn2": "block",
-            "info": "<b>Formaciones</b><br><ul class='list-detalles'><li>HTML5 práctico: Scroll y presentación de contenidos.</li><li>Design Thinking: Experiencia del cliente.</li> <li> Diseño de interfaz (UI) avanzado.</li><li>Google Ads: Creación de campañas.</li><li>Habilidades de coaching para líderes y gerentes.</li><li>Liderazgo colaborativo.</li>"
+            "info": "<b>Formaciones:</b><br><ul class='list-detalles'><li>HTML5 práctico: Scroll y presentación de contenidos.</li><li>Design Thinking: Experiencia del cliente.</li> <li> Diseño de interfaz (UI) avanzado.</li><li>Google Ads: Creación de campañas.</li><li>Habilidades de coaching para líderes y gerentes.</li><li>Liderazgo colaborativo.</li>"
         },
         {
             "id": "platzi",
@@ -157,7 +157,7 @@ export var dataJSON = `{
             "urlBtn2": "https://www.linkedin.com/in/lennyloor/details/certifications/",
             "visibility_btn1": "block",
             "visibility_btn2": "block",
-            "info": "<b>Formaciones</b><br><ul class='list-detalles'><li> Adobe XD. </li>  <li>Fundamentos de Project Management.</li> <li> Figma. </li>"
+            "info": "<b>Formaciones:</b><br><ul class='list-detalles'><li> Adobe XD. </li>  <li>Fundamentos de Project Management.</li> <li> Figma. </li>"
         },
         {
             "id": "cen",
@@ -181,7 +181,7 @@ export var dataJSON = `{
             "urlBtn2": "https://app.aluracursos.com/user/lenny-loor/program/certificate",
             "visibility_btn1": "block",
             "visibility_btn2": "block",
-            "info": "<b>Programa</b><br>Oracle Next Education F2 T5 Front-end. <br><b>Formaciones</b> <ul class='list-detalles'> <li>Principiante en Programación.</li> <li>Desarrollo Personal.</li> <li>Business Agility.</li> <li>Front End.</li> <li>Emprendimiento.</li> <li>React.</li> </ul>"
+            "info": "<b>Programa</b><br>Oracle Next Education F2 T5 Front-end. <br><b>Formaciones:</b> <ul class='list-detalles'> <li>Principiante en Programación.</li> <li>Desarrollo Personal.</li> <li>Business Agility.</li> <li>Front End.</li> <li>Emprendimiento.</li> <li>React.</li> </ul>"
         },
         {
             "id": "espol",
@@ -193,7 +193,7 @@ export var dataJSON = `{
             "urlBtn2": "https://www.senescyt.gob.ec/consulta-titulos-web/faces/vista/consulta/consulta.xhtml",
             "visibility_btn1": "block",
             "visibility_btn2": "block",
-            "info": "<b>Título Obtenido</b><br>Lcda. Diseño y producción Audiovisual.<br><b>Senesyt</b><br>Graduado con número de registro:<BR> 1021-2018-1961447"
+            "info": "<b>Título Obtenido</b><br>Lcda. Diseño y producción Audiovisual.<br><b>Senescyt</b><br>Graduado con número de registro:<BR> 1021-2018-1961447"
         }
     ],
     "projects": [
